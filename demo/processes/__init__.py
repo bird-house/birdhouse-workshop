@@ -1,5 +1,5 @@
-from processes.sayhello import SayHello
-from processes.sleep import Sleep
+from .sayhello import SayHello
+from .sleep import Sleep
 
 processes = [
     SayHello(),
