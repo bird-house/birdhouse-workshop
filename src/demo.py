@@ -7,14 +7,27 @@
 
 import os
 
+from pywps.app.Service import Service
 from pywps import configuration
-
-from . import wsgi
 from pywps._compat import urlparse
 
 import logging
 logging.basicConfig(format='%(message)s', level=logging.INFO)
 LOGGER = logging.getLogger('DEMO')
+
+
+def create_app(cfgfiles=None):
+    """
+    Creates PyWPS WSGI application.
+    """
+    from processes import processes
+    config_files = [os.path.join(os.path.dirname(__file__), 'default.cfg')]
+    if cfgfiles:
+        config_files.extend(cfgfiles)
+    if 'PYWPS_CFG' in os.environ:
+        config_files.append(os.environ['PYWPS_CFG'])
+    service = Service(processes=processes, cfgfiles=config_files)
+    return service
 
 
 def get_host():
@@ -83,7 +96,7 @@ def main():
         bind_host = '0.0.0.0'
     else:
         bind_host = '127.0.0.1'
-    app = wsgi.create_app(cfgfiles)
+    app = create_app(cfgfiles)
     # let's start the service ...
     if args.daemon:
         # daemon (fork) mode
