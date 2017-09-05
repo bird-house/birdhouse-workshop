@@ -1,0 +1,11 @@
+name: workshop
+channels:
+- birdhouse
+- conda-forge
+- defaults
+dependencies:
+- pywps=4.0.0
+# optional for testing
+- flake8
+- ipython
+- pytest
