@@ -1,11 +1,16 @@
 name: workshop
 channels:
 - birdhouse
-- conda-forge
 - defaults
+- conda-forge
 dependencies:
 - pywps=4.0.0
-# optional for testing
+# testing
 - flake8
-- ipython
 - pytest
+# jupyter
+- jupyter
+# plotting
+- cartopy
+# netcdf
+- netcdf4
