@@ -9,3 +9,4 @@ Workshop on PyWPS and using Birdhouse tools.
 ## Links
 
 * https://github.com/PyWPS/pywps-workshop
+* https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks
