@@ -10,3 +10,5 @@ Workshop on PyWPS and using Birdhouse tools.
 
 * https://github.com/PyWPS/pywps-workshop
 * https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks
+* https://github.com/rsignell-usgs/notebook
+* https://github.com/ioos/notebooks_demos
