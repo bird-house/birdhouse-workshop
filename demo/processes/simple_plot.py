@@ -11,9 +11,10 @@ LOGGER = logging.getLogger('PYWPS')
 class SimplePlot(Process):
     def __init__(self):
         inputs = [
-            ComplexInput('dataset', 'Dataset', supported_formats=[Format('application/x-netcdf')]),
+            ComplexInput('dataset', 'Dataset', supported_formats=[Format('application/x-netcdf')],
+                         abstract='Example: https://www.esrl.noaa.gov/psd/thredds/fileServer/Datasets/ncep.reanalysis/surface/air.sig995.2012.nc'),  # noqa
             LiteralInput('variable', 'Variable', data_type='string',
-                         min_occurs=0),
+                         abstract='Example: air'),
         ]
         outputs = [
             ComplexOutput('output', 'Simple Plot', supported_formats=[Format('image/png')],
@@ -33,15 +34,11 @@ class SimplePlot(Process):
         )
 
     def _handler(self, request, response):
-        if 'variable' in request.inputs:
-            variable = request.inputs['variable'][0].data
-        else:
-            variable = None
-        LOGGER.info('collected inputs')
+        variable = request.inputs['variable'][0].data
         output = simple_plot(
             resource=request.inputs['dataset'][0].file,
             variable=variable)
-        LOGGER.info("produces output: %s", output)
+        LOGGER.info("produced output: %s", output)
         response.outputs['output'].file = output
         response.update_status("simple_plot done", 100)
         return response
