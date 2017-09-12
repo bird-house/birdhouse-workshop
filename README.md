@@ -13,3 +13,5 @@ Workshop on PyWPS and using Birdhouse tools.
 * https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks
 * https://github.com/rsignell-usgs/notebook
 * https://github.com/ioos/notebooks_demos
+  * https://github.com/ioos/notebooks_demos/blob/master/notebooks/2017-09-09-hurricane_irma.ipynb
+* http://schubert.atmos.colostate.edu/~cslocum/netcdf_example.html
