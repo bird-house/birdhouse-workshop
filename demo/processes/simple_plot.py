@@ -7,13 +7,17 @@ from demo.plotter import simple_plot
 import logging
 LOGGER = logging.getLogger('PYWPS')
 
+AIR_DS = 'https://www.esrl.noaa.gov/psd/thredds/fileServer/Datasets/ncep.reanalysis.derived/surface/air.mon.ltm.nc'
+
 
 class SimplePlot(Process):
     def __init__(self):
         inputs = [
             ComplexInput('dataset', 'Dataset', supported_formats=[Format('application/x-netcdf')],
-                         abstract='Example: https://www.esrl.noaa.gov/psd/thredds/fileServer/Datasets/ncep.reanalysis/surface/air.sig995.2012.nc'),  # noqa
+                         default=AIR_DS,
+                         abstract='Example: {0}'.format(AIR_DS)),
             LiteralInput('variable', 'Variable', data_type='string',
+                         default='air',
                          abstract='Example: air'),
         ]
         outputs = [
