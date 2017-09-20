@@ -23,3 +23,12 @@ Install some packages
 ---------------------
 
 * git
+
+Work with channels
+------------------
+
+Advanced
+--------
+
+* build own packages
+* anaconda cloud
