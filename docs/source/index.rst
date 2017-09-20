@@ -13,9 +13,11 @@ Birdhouse Workshop
    requirements
    conda
    prepare
-   plotter
-   testing_plotter
-   plotter_cli
+   basics
+   pywps
+   birds
+   advanced
+
 
 Indices and tables
 ==================

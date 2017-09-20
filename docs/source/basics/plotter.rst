@@ -73,7 +73,7 @@ On Ubuntu/LinuxMint you can try *Eye of Gnome*::
 
 The image should look like the following:
 
-.. image:: _static/plot.png
+.. image:: ../_static/plot.png
 
 
 Exercise
@@ -95,7 +95,7 @@ Read the code and comments carefully to make this work.
 
 The final result should look like this:
 
-.. image:: _static/plot_with_bgmap.png
+.. image:: ../_static/plot_with_bgmap.png
 
 
 Links
