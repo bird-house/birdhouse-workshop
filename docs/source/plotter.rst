@@ -80,3 +80,31 @@ On Ubuntu/LinuxMint you can try *Eye of Gnome*::
 The image should look like the following:
 
 .. image:: _static/plot.png
+
+
+Exercise
+--------
+
+Open the ``plotter.py`` and implement the following features:
+
+* add a colorbar
+* add a background map with coastlines
+* use a PlateCarree map projection
+
+You will need an additional Python package, ``cartopy``, which you can install with conda.
+This package is available on the conda-forge channel.
+You need to provide an option with the conda channel::
+
+    $ conda install -c conda-forge mypackage
+
+Read the code and comments carefully to make this work.
+
+The final result should look like this:
+
+.. image:: _static/plot_with_bgmap.png
+
+
+Links
+-----
+
+ipython notebooks with cartopy example code.
