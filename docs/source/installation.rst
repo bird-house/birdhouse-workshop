@@ -3,14 +3,6 @@
 Installation
 ============
 
-We need to install Conda.
+Clone the workshop repo from Github::
 
-
-Linux
------
-
-MacOS
------
-
-Windows
--------
+    $ git clone https://github.com/bird-house/birdhouse-workshop.git

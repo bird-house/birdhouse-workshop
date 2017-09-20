@@ -5,6 +5,9 @@ Workshop Requirements
 
 This workshop requires the following ...
 
+.. note::
+  https://github.com/geopython/pycsw-workshop/blob/master/docs/requirements.txt
+
 
 1. Install VirtualBox
 ---------------------
