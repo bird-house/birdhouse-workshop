@@ -8,6 +8,7 @@ Birdhouse Workshop
    :caption: Contents:
 
    requirements
+   installation
 
 Indices and tables
 ==================
