@@ -11,8 +11,6 @@ Birdhouse Workshop
    :caption: Contents:
 
    requirements
-   conda
-   prepare
    basics
    pywps
    birds
