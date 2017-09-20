@@ -1,18 +1,12 @@
 .. _plotter:
 
-Plotter
-=======
+Writing a simple Plot Function
+=================================
 
 Prepare
 -------
 
-Clone the workshop repo from Github::
-
-    $ git clone https://github.com/bird-house/birdhouse-workshop.git
-
-Create the workshop conda envionment::
-
-    $ conda create -n workshop python=3
+See :ref:`prepare`.
 
 Activate the conda workshop enviroment::
 

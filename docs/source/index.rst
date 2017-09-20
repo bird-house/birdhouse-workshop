@@ -12,7 +12,9 @@ Birdhouse Workshop
 
    requirements
    conda
+   prepare
    plotter
+   testing_plotter
 
 Indices and tables
 ==================
