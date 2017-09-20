@@ -9,8 +9,8 @@ In the following sections will introduce the basics.
    :maxdepth: 2
 
    basics/plotter
-   basics/plotter_cli
    basics/testing_plotter
+   basics/plotter_cli
 ..   basics/logging
    basics/jupyter
    advanced/opendap
