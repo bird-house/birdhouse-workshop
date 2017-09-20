@@ -12,7 +12,7 @@ Birdhouse Workshop
 
    requirements
    conda
-   installation
+   plotter
 
 Indices and tables
 ==================

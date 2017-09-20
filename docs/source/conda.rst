@@ -17,3 +17,9 @@ MacOS
 
 Windows
 -------
+
+
+Install some packages
+---------------------
+
+* git
