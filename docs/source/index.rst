@@ -15,6 +15,7 @@ Birdhouse Workshop
    prepare
    plotter
    testing_plotter
+   plotter_cli
 
 Indices and tables
 ==================
