@@ -9,6 +9,9 @@ This workshop requires the following ...
   https://github.com/geopython/pycsw-workshop/blob/master/docs/requirements.txt
 
 
+.. warning::
+    You need a good internet connection! We are using GitHub, Conda and external data.
+
 1. Git
 ------
 

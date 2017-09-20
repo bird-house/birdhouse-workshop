@@ -18,6 +18,13 @@ MacOS
 Windows
 -------
 
+Check our python version
+------------------------
+
+We are using Python 3.6::
+
+  $ python --version
+  Python 3.6.2 :: Continuum Analytics, Inc.
 
 Install some packages
 ---------------------
