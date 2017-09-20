@@ -58,4 +58,15 @@ def test_simple_plot():
 
 
 if __name__ == '__main__':
-    simple_plot(resource=AIR_DS, variable="air")
+    import argparse
+
+    parser = argparse.ArgumentParser(description='Generates a nice and simple plot from a NetCDF file.')
+    parser.add_argument('dataset', nargs=1, default=AIR_DS,
+                        help='a NetCDF file or an OpenDAP URL')
+    parser.add_argument('-V', '--variable', nargs='?', default='air',
+                        help='variable to plot (default: air)')
+
+    args = parser.parse_args()
+    print("dataset={0.dataset}, variable={0.variable}".format(args))
+    output = simple_plot(resource=args.dataset[0], variable=args.variable)
+    print("Output: {}".format(output))
