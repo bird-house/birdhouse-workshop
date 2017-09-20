@@ -55,3 +55,8 @@ Open your editor on ``plotter.py`` ... and happy hacking.
 Don't forget to test often::
 
   $ pytest plotter.py
+
+Links
+-----
+
+https://docs.python.org/3/howto/argparse.html
