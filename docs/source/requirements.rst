@@ -1,7 +1,7 @@
 .. _requirements:
 
-Workshop Requirements
-=====================
+Requirements
+============
 
 This workshop requires the following ...
 

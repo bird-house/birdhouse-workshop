@@ -3,8 +3,8 @@
 Birdhouse Workshop
 ==================
 
-.. note::
-  https://github.com/geopython/pycsw-workshop/blob/master/index.txt
+.. warning::
+  Under Construction ...
 
 .. toctree::
    :maxdepth: 2
@@ -15,11 +15,3 @@ Birdhouse Workshop
    pywps
    birds
    advanced
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
