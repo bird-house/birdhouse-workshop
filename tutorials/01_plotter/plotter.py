@@ -3,7 +3,9 @@ import matplotlib.pylab as plt
 # import cartopy.crs as ccrs
 from netCDF4 import Dataset
 
-AIR_DS = '../data/air.mon.ltm.nc'
+import os
+DATADIR = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..', 'data')
+AIR_DS = os.path.join(DATADIR, 'air.mon.ltm.nc')
 
 
 def simple_plot(resource, variable=None, output='plot.png'):
