@@ -44,17 +44,17 @@ def simple_plot(resource, variable=None, output='plot.png'):
 
 
 def test_simple_plot():
-    raise NotImplementedError("This test is not implemented yet. Help wanted!")
+    # raise NotImplementedError("This test is not implemented yet. Help wanted!")
 
-    # TODO: run default test
-    # output = simple_plot(resource=AIR_DS, variable='air')
-    # assert output == 'no_plot.png'
+    # run default test
+    output = simple_plot(resource=AIR_DS, variable='air')
+    assert output == 'plot.png'
 
-    # TODO: try an invalid variable
-    # try:
-    simple_plot(resource=AIR_DS, variable='water')
-    # except KeyError:
-    #    pass
+    # try an invalid variable
+    try:
+        simple_plot(resource=AIR_DS, variable='water')
+    except KeyError:
+        pass
 
 
 if __name__ == '__main__':
