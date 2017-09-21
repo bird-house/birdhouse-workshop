@@ -11,5 +11,5 @@ In the following sections will introduce PyWPS.
    pywps/intro
    pywps/installation
    pywps/process
-..   pywps/birdy
-   pywps/jupyter
+   pywps/testing
+   pywps/clients
