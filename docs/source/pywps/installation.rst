@@ -15,18 +15,18 @@ Activate the conda workshop enviroment::
 Aim
 ---
 
-We are going to install PyWPS and run a some example processes.
+We are going to install PyWPS and run some example processes.
 
 Objectives:
 
-* You will learn how to install PyWPS and start a WPS service.
+* You will learn how to install PyWPS, start a WPS service and execute a process.
 
 
 Install PyWPS
 -------------
 
 You can install PyWPS via conda.
-Make sure you install PyWPS from the *birdhouse conda channel*::
+Make sure you install PyWPS from the *birdhouse* conda channel::
 
     $ conda install -c birdhouse pywps
 
@@ -42,7 +42,7 @@ Start the demo WPS service
 
 This workshop includes a demo service with some example processes. Let's try them.
 
-Start the service by issuing the following command::
+Start the service by running the following command::
 
     $ python demo/demo.py
 
@@ -67,13 +67,14 @@ You will get an XML exception report by the PyWPS service::
     </ows:Exception>
   </ows:ExceptionReport>
 
-The good thing ... the service is talking to you :)
+The good thing ... the service is running and talking to you :)
 
 Test PyWPS
 ----------
 
 Test the WPS service itself using a GetCapabilities request;
 insert this address in your browser:
+
 http://127.0.0.1:5000/wps?SERVICE=WPS&REQUEST=GetCapabilities
 
 In the GetCapabilities XML document notice the following:
@@ -96,10 +97,11 @@ Please find this description in the document. It should look like this::
 
 Now, we need some more details about this process. Therefore we do a DescribeProcess request;
 insert this address in your browser:
+
 http://127.0.0.1:5000/wps?SERVICE=WPS&REQUEST=DescribeProcess&VERSION=1.0.0&IDENTIFIER=say_hello
 
-The resulting XML document tells us something about the input and output parameters,
-for example there is a parameter ``name``::
+The resulting XML document tells us something about the *input* and *output* parameters,
+for example there is an input parameter ``name``::
 
       <Input minOccurs="1" maxOccurs="1">
         <ows:Identifier>name</ows:Identifier>
@@ -110,7 +112,8 @@ for example there is a parameter ``name``::
         </LiteralData>
       </Input>
 
-Let us now execute a ``say_hello`` process with the ``name`` *Birdy*:
+Let us now execute the ``say_hello`` process with an input parameter ``name`` *Birdy*:
+
 http://127.0.0.1:5000/wps?SERVICE=WPS&REQUEST=Execute&VERSION=1.0.0&IDENTIFIER=say_hello&DataInputs=name=Birdy
 
 If all wents well, you get an output parameter with the value *Hello Birdy*::
@@ -126,14 +129,18 @@ If all wents well, you get an output parameter with the value *Hello Birdy*::
   </wps:ProcessOutputs>
 
 
-Excercise
----------
+Exercise 1
+----------
 
-Your task is to implement a meaningful test for our ``simple_plot`` function.
+Try the ``say_hello`` again with some other input values.
 
-Start hacking ``plotter.py`` in your favorite editor and run ``pytest`` frequently.
+Exercise 2
+----------
 
-Read the comments carefully to make this work and do not trust every line of code.
+Before you fall into sleep ... let's do another exercise.
+Our service has another process. Which one is it?
+
+Please find it and run an execute request ... you need to know the input parameters.
 
 Links
 -----
