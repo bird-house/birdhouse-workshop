@@ -31,3 +31,5 @@ opendap:
 
 other:
 * https://www.authorea.com/users/23/articles/8762-the-paper-of-the-future/_show_article
+* https://blog.alexellis.io/prometheus-monitoring/
+* https://blog.alexellis.io/serverless-imagemagick/
