@@ -8,7 +8,9 @@ Requirements
 
 See :ref:`prepare`.
 
-Activate the conda workshop enviroment::
+Activate the conda workshop enviroment:
+
+.. code-block:: bash
 
     $ source activate workshop
 
@@ -22,13 +24,6 @@ In this chapter you get acquainted with alternative tools to interact with a PyW
 Objectives:
 
 * You will learn how to test a PyWPS process.
-
-Check the logs
---------------
-
-Configure logging
------------------
-
 
 wget
 ----
