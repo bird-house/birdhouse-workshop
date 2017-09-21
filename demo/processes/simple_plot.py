@@ -18,7 +18,7 @@ class SimplePlot(Process):
                          abstract='Example: {0}'.format(AIR_DS)),
             LiteralInput('variable', 'Variable', data_type='string',
                          default='air',
-                         abstract='Example: air'),
+                         abstract='Enter the variable name.'),
         ]
         outputs = [
             ComplexOutput('output', 'Simple Plot', supported_formats=[Format('image/png')],
