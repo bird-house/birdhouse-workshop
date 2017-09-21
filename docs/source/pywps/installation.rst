@@ -47,6 +47,7 @@ Start the service by issuing the following command::
     $ python demo/demo.py
 
 If everything went well you should have a console output as follows::
+
   Configuration file(s) ['demo/default.cfg'] loaded
   starting WPS service on http://localhost:5000/wps
     * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)

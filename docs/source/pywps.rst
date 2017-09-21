@@ -9,6 +9,7 @@ In the following sections will introduce PyWPS.
    :maxdepth: 2
 
    pywps/intro
+   pywps/installation
 ..   pywps/plotter
    pywps/birdy
    pywps/jupyter
