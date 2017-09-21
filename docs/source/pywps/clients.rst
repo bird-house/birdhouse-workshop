@@ -15,7 +15,7 @@ Activate the conda workshop enviroment::
 Aim
 ---
 
-We are going to write use a WPS client.
+We are going to write use howto use a WPS client.
 
 Objectives:
 
@@ -74,7 +74,40 @@ Run ``say_hello``:
 OWSLib
 ------
 
-use notebook.
+`OWSLib <https://geopython.github.io/OWSLib/>`_ is a Python library for client programming
+with Open Geospatial Consortium (OGC) web service (hence OWS), like WMS, CSW and WPS.
+
+We are using an Jupyter notebook to look at some example code.
+
+We need to install `Jupyter <https://jupyter.org/>`_ via conda:
+
+.. code-block:: bash
+
+   $ conda install jupyter
+
+Go to the tutorials folder ``pywps_clients``:
+
+.. code-block:: bash
+
+    $ cd tutorials/pywps_clients
+
+You will find there an Jupyter notebook:
+
+.. code-block:: bash
+
+    $ ls
+    owslib-wps.ipynb
+
+Open the Jupyter notebook:
+
+.. code-block:: bash
+
+   $ jupyter notebook
+
+And point your browser to the following URL:
+
+http://localhost:8888/notebooks/owslib-wps.ipynb
+
 
 Phoenix
 -------
@@ -93,3 +126,6 @@ Links
 -----
 
 Notebooks, tutorials ...
+
+https://try.jupyter.org/
+https://nbviewer.jupyter.org/
