@@ -4,7 +4,7 @@ import cartopy.crs as ccrs
 from netCDF4 import Dataset
 
 import os
-DATADIR = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..', 'data')
+DATADIR = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..', '..', 'data')
 AIR_DS = os.path.join(DATADIR, 'air.mon.ltm.nc')
 
 
