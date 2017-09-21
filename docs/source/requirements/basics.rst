@@ -1,7 +1,7 @@
 .. _requirements_basics:
 
-Basic Requirements
-==================
+Basics
+======
 
 1. Git
 ------

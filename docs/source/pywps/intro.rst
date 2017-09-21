@@ -1,7 +1,7 @@
 .. _pywps_intro:
 
-PyWPS Introduction
-==================
+Introduction
+============
 
 Some words about WPS in general and PyWPS.
 

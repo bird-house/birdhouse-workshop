@@ -1,7 +1,7 @@
 .. _prepare:
 
-Prepare
-=======
+Getting Started
+===============
 
 Clone the workshop repo from Github::
 
