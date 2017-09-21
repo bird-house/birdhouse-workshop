@@ -11,6 +11,7 @@ Birdhouse Workshop
    :caption: Contents:
 
    requirements
+   quick
    basics
    pywps
    birds
