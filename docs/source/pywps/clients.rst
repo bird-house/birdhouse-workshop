@@ -15,11 +15,32 @@ Activate the conda workshop enviroment::
 Aim
 ---
 
-We are going to write a PyWPS process.
+We are going to write use a WPS client.
 
 Objectives:
 
-* You will learn how to write a PyWPS process.
+* You will learn how to use a WPS client.
+* You will learn to use Jupyter Notebooks.
+
+OWSLib
+------
+
+use notebook.
+
+Birdy
+-----
+
+command line
+
+Phoenix
+-------
+
+Just an online example.
+
+QGIS
+----
+
+Maybe a screenshot.
 
 Exercise
 --------
