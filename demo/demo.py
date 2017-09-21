@@ -20,7 +20,7 @@ def create_app(cfgfiles=None):
     """
     Creates PyWPS WSGI application.
     """
-    from processes import processes
+    from demo.processes import processes
     config_files = [os.path.join(os.path.dirname(__file__), 'default.cfg')]
     if cfgfiles:
         config_files.extend(cfgfiles)
