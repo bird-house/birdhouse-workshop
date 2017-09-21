@@ -8,7 +8,9 @@ Requirements
 
 See :ref:`prepare`.
 
-Activate the conda workshop enviroment::
+Activate the conda workshop enviroment:
+
+.. code-block:: bash
 
     $ source activate workshop
 
@@ -26,11 +28,15 @@ Install PyWPS
 -------------
 
 You can install PyWPS via conda.
-Make sure you install PyWPS from the *birdhouse* conda channel::
+Make sure you install PyWPS from the *birdhouse* conda channel:
+
+.. code-block:: bash
 
     $ conda install -c birdhouse pywps
 
-Let's see if this has worked::
+Let's see if this has worked:
+
+.. code-block:: bash
 
     $ python -c "import pywps"
 
@@ -42,7 +48,9 @@ Start the demo WPS service
 
 This workshop includes a demo service with some example processes. Let's try them.
 
-Start the service by running the following command::
+Start the service by running the following command:
+
+.. code-block:: bash
 
     $ python demo/demo.py
 
@@ -57,7 +65,9 @@ Service check
 
 To test the service open your internet browser to this address: http://127.0.0.1:5000/wps.
 
-You will get an XML exception report by the PyWPS service::
+You will get an XML exception report by the PyWPS service:
+
+.. code-block:: xml
 
   <?xml version="1.0" encoding="UTF-8"?>
   <!-- PyWPS 4.0.0 -->
@@ -88,7 +98,10 @@ Say hello
 
 We can run now our first process.
 The GetCapabilities XML document tells us that this WPS serivce has a process with identifier ``say_hello``.
-Please find this description in the document. It should look like this::
+Please find this description in the document. It should look like this:
+
+.. code-block:: xml
+   :emphasize-lines: 2
 
     <wps:Process wps:processVersion="1.3.2">
       <ows:Identifier>say_hello</ows:Identifier>
@@ -101,7 +114,10 @@ insert this address in your browser:
 http://127.0.0.1:5000/wps?SERVICE=WPS&REQUEST=DescribeProcess&VERSION=1.0.0&IDENTIFIER=say_hello
 
 The resulting XML document tells us something about the *input* and *output* parameters,
-for example there is an input parameter ``name``::
+for example there is an input parameter ``name``:
+
+.. code-block:: xml
+   :emphasize-lines: 2
 
       <Input minOccurs="1" maxOccurs="1">
         <ows:Identifier>name</ows:Identifier>
@@ -116,17 +132,20 @@ Let us now execute the ``say_hello`` process with an input parameter ``name`` *B
 
 http://127.0.0.1:5000/wps?SERVICE=WPS&REQUEST=Execute&VERSION=1.0.0&IDENTIFIER=say_hello&DataInputs=name=Birdy
 
-If all wents well, you get an output parameter with the value *Hello Birdy*::
+If all wents well, you get an output parameter with the value *Hello Birdy*:
 
-  <wps:ProcessOutputs>
-    <wps:Output>
-      <ows:Identifier>response</ows:Identifier>
-      <ows:Title>Output response</ows:Title>
-      <wps:Data>
-        <wps:LiteralData dataType="urn:ogc:def:dataType:OGC:1.1:string" uom="urn:ogc:def:uom:OGC:1.0:unity">Hello Birdy</wps:LiteralData>
-      </wps:Data>
-    </wps:Output>
-  </wps:ProcessOutputs>
+.. code-block:: xml
+   :emphasize-lines: 6
+
+    <wps:ProcessOutputs>
+      <wps:Output>
+        <ows:Identifier>response</ows:Identifier>
+        <ows:Title>Output response</ows:Title>
+        <wps:Data>
+          <wps:LiteralData dataType="urn:ogc:def:dataType:OGC:1.1:string" uom="urn:ogc:def:uom:OGC:1.0:unity">Hello Birdy</wps:LiteralData>
+        </wps:Data>
+      </wps:Output>
+    </wps:ProcessOutputs>
 
 
 Exercise 1

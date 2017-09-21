@@ -8,7 +8,9 @@ Requirements
 
 See :ref:`prepare`.
 
-Activate the conda workshop enviroment::
+Activate the conda workshop enviroment:
+
+.. code-block:: bash
 
     $ source activate workshop
 
@@ -48,16 +50,22 @@ We need to do the following:
 Check the plotter function
 --------------------------
 
-Change into the tutorial ``processes`` folder::
+Change into the tutorial ``processes`` folder:
+
+.. code-block:: bash
 
   $ cd tutorials/10_plotter_process/processes
 
-You can find here the ``plotter.py`` module from our previous exercise::
+You can find here the ``plotter.py`` module from our previous exercise:
+
+.. code-block:: bash
 
   $ ls
   plotter.py
 
-Let's see if it still works::
+Let's see if it still works:
+
+.. code-block:: bash
 
   $ python plotter.py -h
   $ python plotter.py ../../../data/air.mon.ltm.nc -V air
@@ -71,7 +79,9 @@ Let's see if it still works::
 Write the process definition
 -----------------------------
 
-In the ``processes/`` folder there is another file::
+In the ``processes/`` folder there is another file:
+
+.. code-block:: bash
 
   $ ls
   wps_simple_plot.py
@@ -81,11 +91,15 @@ This file contains the process definition. Notice the input and output parameter
 Start the service
 -----------------
 
-Change into the tutorials folder::
+Change into the tutorials folder:
+
+.. code-block:: bash
 
     $ cd tutorials/10_plotter_process
 
-Start the WPS service::
+Start the WPS service:
+
+.. code-block:: bash
 
     $ python ../../demo/demo.py
 
@@ -101,15 +115,17 @@ Exercise 1
 Activate the ``SimplePlot`` process from the ``wps_simple_plot`` module.
 See if it shows up in the GetCapabilites request.
 
-**Tip**: You need to edit ``processes/__init__.py`` and restart the demo service.
+.. tip::
+  You need to edit ``processes/__init__.py`` and restart the demo service.
 
 Exercise 2
 ----------
 
 When the ``SimplePlot`` process is activated then run a DescribeProcess request.
 
-**Tip**: Find the process ``identifier`` of ``SimplePlot`` in the GetCapabilities document
-and adapt the DescribeProcess URL from our previous exercise.
+.. tip::
+  Find the process ``identifier`` of ``SimplePlot`` in the GetCapabilities document
+  and adapt the DescribeProcess URL from our previous exercise.
 
 Excercise 3
 -----------
