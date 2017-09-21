@@ -137,7 +137,7 @@ Try the ``say_hello`` again with some other input values.
 Exercise 2
 ----------
 
-Before you fall into sleep ... let's do another exercise.
+Before you fall into *sleep* ... let's do another exercise.
 Our service has another process. Which one is it?
 
 Please find it and run an execute request ... you need to know the input parameters.

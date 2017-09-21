@@ -10,6 +10,6 @@ In the following sections will introduce PyWPS.
 
    pywps/intro
    pywps/installation
-..   pywps/plotter
-   pywps/birdy
+   pywps/process
+..   pywps/birdy
    pywps/jupyter
