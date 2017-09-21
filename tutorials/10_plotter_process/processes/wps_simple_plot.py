@@ -2,7 +2,7 @@
 from pywps import Process, LiteralInput, ComplexInput, ComplexOutput
 from pywps import Format
 
-from ..plotter import simple_plot
+from plotter import simple_plot
 
 import logging
 LOGGER = logging.getLogger('PYWPS')
@@ -39,6 +39,7 @@ class SimplePlot(Process):
 
     def _handler(self, request, response):
         variable = request.inputs['variable'][0].data
+        # Call simple_plot function
         output = simple_plot(
             resource=request.inputs['dataset'][0].file,
             variable=variable)
