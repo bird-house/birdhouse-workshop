@@ -28,7 +28,9 @@ Objectives:
 wget
 ----
 
-Start by trying the GetCapabilities request::
+Start by trying the GetCapabilities request:
+
+.. code-block:: bash
 
     $ wget -q -O - "http://127.0.0.1:5000/wps?SERVICE=WPS&REQUEST=GetCapabilities"
 

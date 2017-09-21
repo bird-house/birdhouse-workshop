@@ -3,7 +3,7 @@
 PyWPS
 ======
 
-In the following sections will introduce PyWPS.
+In the following sections we will introduce PyWPS.
 
 .. toctree::
    :maxdepth: 2
@@ -12,4 +12,5 @@ In the following sections will introduce PyWPS.
    pywps/installation
    pywps/process
    pywps/testing
+   pywps/logging
    pywps/clients
