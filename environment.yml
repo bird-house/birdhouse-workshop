@@ -9,9 +9,9 @@ dependencies:
 - flake8
 - pytest
 # jupyter
-- jupyter
+#- jupyter
 # plotting
-- iris
+#- iris
 - cartopy
 # netcdf
 - netcdf4
