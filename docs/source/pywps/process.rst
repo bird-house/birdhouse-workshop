@@ -134,6 +134,8 @@ Run an Execute request with an external NetCDF file.
 
 http://127.0.0.1:5000/wps?SERVICE=WPS&REQUEST=Execute&version=1.0.0&identifier=simple_plot&datainputs=variable=air;dataset=@xlink:href=file:///home/pingu/sandbox/birdhouse/birdhouse-workshop/data
 
+Execute Request with direct output.
+
 
 Links
 -----
