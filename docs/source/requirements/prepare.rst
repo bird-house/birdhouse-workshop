@@ -21,6 +21,15 @@ Activate the conda workshop enviroment:
 
     $ source activate workshop
 
+I don't have git ...
+--------------------
+
+Don't worry ... the quickest way to install git is using conda:
+
+.. code-block:: bash
+
+    $ conda install git
+
 
 If things go wrong ...
 ----------------------

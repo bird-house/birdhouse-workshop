@@ -3,12 +3,8 @@
 Basics
 ======
 
-1. Git
-------
 
-Install Git ... for example with conda.
-
-2. Editor
+1. Editor
 ----------
 
 * vim
@@ -18,7 +14,7 @@ Install Git ... for example with conda.
 * pycharm
 * spider
 
-3. Install VirtualBox
+2. Install VirtualBox
 ---------------------
 
 * download the `VirtualBox platform package <https://www.virtualbox.org/wiki/Downloads>`__ for your local machine
