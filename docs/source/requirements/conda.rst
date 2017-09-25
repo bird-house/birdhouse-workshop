@@ -1,4 +1,4 @@
-.. _conda:
+.. _requirements_conda:
 
 Conda
 =====
@@ -52,11 +52,13 @@ Windows
 
 Run the installer Choose *Just Me* (not *All Users*), and choose a Install Location owned by you.
 
-Check our python version
-------------------------
+Check your Python version
+-------------------------
 
 We are using Python 3.6::
 
+  $ which python
+  $HOME/miniconda3/bin/python
   $ python --version
   Python 3.6.2 :: Continuum Analytics, Inc.
 
