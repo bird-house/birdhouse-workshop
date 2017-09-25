@@ -15,7 +15,7 @@ Create the *workshop* conda environment:
 
     $ conda create -n workshop python=3
 
-Activate the conda *workshop* environment (Linux and MacOS):
+Activate the conda *workshop* environment (Linux and macOS):
 
 .. code-block:: bash
 

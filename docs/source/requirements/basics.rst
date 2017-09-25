@@ -20,5 +20,8 @@ Basics
 * download the `VirtualBox platform package <https://www.virtualbox.org/wiki/Downloads>`__ for your local machine
 * run the installer, and select the default setup options (approve any device security questions)
 
-.. note::
-  https://github.com/geopython/pycsw-workshop/blob/master/docs/requirements.txt
+
+Links
+-----
+
+* https://github.com/geopython/pycsw-workshop/blob/master/docs/requirements.txt
