@@ -28,11 +28,13 @@ Install PyWPS
 -------------
 
 You can install PyWPS via conda.
-Make sure you install PyWPS from the *birdhouse* conda channel:
+Make sure you install PyWPS from the *birdhouse* conda channel. We also need the
+*conda-forge* channel, and the channels must be provided in the displayed order
+(channel priority):
 
 .. code-block:: bash
 
-    $ conda install -c birdhouse pywps
+    $ conda install -c birdhouse -c conda-forge pywps gdal
 
 Let's see if this has worked:
 
@@ -41,7 +43,7 @@ Let's see if this has worked:
     $ python -c "import pywps"
 
 This bash command will load the pywps library and close the console.
-If the install was properly done no error messages will appear.
+If the install was properly done *no error messages* will appear.
 
 Start the demo WPS service
 --------------------------
@@ -63,7 +65,7 @@ If everything went well you should have a console output as follows::
 Service check
 -------------
 
-To test the service open your internet browser to this address: http://127.0.0.1:5000/wps.
+To test the service, open your internet browser to this address: http://127.0.0.1:5000/wps.
 
 You will get an XML exception report by the PyWPS service:
 
