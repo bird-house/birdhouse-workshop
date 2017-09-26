@@ -23,6 +23,9 @@ WPS is normally used for geospatial data to run spatial processes.
 What is PyWPS?
 --------------
 
+.. image:: ../_static/pywps.png
+  :width: 200px
+
 `PyWPS`_ is a WPS implementation written in the Python language.
 The current version is 4.0.0.
 
