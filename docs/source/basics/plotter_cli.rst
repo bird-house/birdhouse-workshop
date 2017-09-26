@@ -36,7 +36,7 @@ See the command line options of our plotter::
 
 Plot our well-know image::
 
-    $ python plotter.py --variable air ../data/air.mon.ltm.nc
+    $ python plotter.py --variable air ../../data/air.mon.ltm.nc
 
 Exercise 1
 -----------
