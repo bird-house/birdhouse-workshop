@@ -84,12 +84,12 @@ The good thing ... the service is running and talking to you :)
 Test PyWPS
 ----------
 
-Test the WPS service itself using a GetCapabilities request;
+Test the WPS service itself using a **GetCapabilities** request;
 insert this address in your browser:
 
-http://127.0.0.1:5000/wps?SERVICE=WPS&REQUEST=GetCapabilities
+http://127.0.0.1:5000/wps?service=WPS&request=GetCapabilities
 
-In the GetCapabilities XML document notice the following:
+In the **GetCapabilities** XML document notice the following:
 
 * Abstract describing service
 * Service provider
@@ -99,7 +99,7 @@ Say hello
 ---------
 
 We can run now our first process.
-The GetCapabilities XML document tells us that this WPS serivce has a process with identifier ``say_hello``.
+The **GetCapabilities** XML document tells us that this WPS serivce has a process with identifier ``say_hello``.
 Please find this description in the document. It should look like this:
 
 .. code-block:: xml
@@ -110,10 +110,10 @@ Please find this description in the document. It should look like this:
       <ows:Title>Process Say Hello</ows:Title>
     </wps:Process>
 
-Now, we need some more details about this process. Therefore we do a DescribeProcess request;
+Now, we need some more details about this process. Therefore we do a **DescribeProcess** request;
 insert this address in your browser:
 
-http://127.0.0.1:5000/wps?SERVICE=WPS&REQUEST=DescribeProcess&VERSION=1.0.0&IDENTIFIER=say_hello
+http://127.0.0.1:5000/wps?service=WPS&request=DescribeProcess&version=1.0.0&identifier=say_hello
 
 The resulting XML document tells us something about the *input* and *output* parameters,
 for example there is an input parameter ``name``:
@@ -132,9 +132,9 @@ for example there is an input parameter ``name``:
 
 Let us now execute the ``say_hello`` process with an input parameter ``name`` *Birdy*:
 
-http://127.0.0.1:5000/wps?SERVICE=WPS&REQUEST=Execute&VERSION=1.0.0&IDENTIFIER=say_hello&DataInputs=name=Birdy
+http://127.0.0.1:5000/wps?service=WPS&request=Execute&version=1.0.0&identifier=say_hello&DataInputs=name=Birdy
 
-If all wents well, you get an output parameter with the value *Hello Birdy*:
+If all went well, you get an output parameter with the value *Hello Birdy*:
 
 .. code-block:: xml
    :emphasize-lines: 6
@@ -166,4 +166,4 @@ Please find it and run an execute request ... you need to know the input paramet
 Links
 -----
 
-Notebooks, tutorials ...
+* `PyWPS Flask Demo <http://pywps-demo.readthedocs.io/en/latest/>`_
