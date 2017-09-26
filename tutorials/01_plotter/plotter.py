@@ -1,3 +1,8 @@
+import matplotlib
+# no X11 server ... must be run first
+# https://github.com/matplotlib/matplotlib/issues/3466/
+matplotlib.use('Agg')
+
 import matplotlib.pylab as plt
 # TODO: import ccrs for map projections
 # import cartopy.crs as ccrs
