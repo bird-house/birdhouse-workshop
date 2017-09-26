@@ -24,10 +24,10 @@ Objectives:
 * You will learn how to write a PyWPS process.
 
 
-What is a Process?
-------------------
+What is a WPS Process?
+----------------------
 
-In PyWPS a process is a python class that has the following structure:
+In PyWPS a process is a Python class that has the following structure:
 
 * The parent ``Process`` class.
 * Four input/ouput classes: ``ComplexInput``, ``LiteralInput``, ``ComplexOutput`` and ``LiteralOutput``
