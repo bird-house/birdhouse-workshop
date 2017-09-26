@@ -68,6 +68,11 @@ Let's see if it still works:
 .. code-block:: bash
 
   $ python plotter.py -h
+
+Generate a plot:
+
+.. code-block:: bash
+
   $ python plotter.py ../../../data/air.mon.ltm.nc -V air
   dataset=['../../../data/air.mon.ltm.nc'], variable=air
   Plotting ../../../data/air.mon.ltm.nc ...
@@ -105,7 +110,7 @@ Start the WPS service:
 
 Check if the service is running:
 
-http://127.0.0.1:5000/wps?SERVICE=WPS&REQUEST=GetCapabilities
+http://127.0.0.1:5000/wps?service=WPS&request=GetCapabilities
 
 Notice that the ``simple_plot`` service is not activated. Well, time to exercise ...
 
@@ -113,7 +118,7 @@ Exercise 1
 ----------
 
 Activate the ``SimplePlot`` process from the ``wps_simple_plot`` module.
-See if it shows up in the GetCapabilites request.
+See if it shows up in the **GetCapabilites** request.
 
 .. tip::
   You need to edit ``processes/__init__.py`` and restart the demo service.
@@ -121,18 +126,18 @@ See if it shows up in the GetCapabilites request.
 Exercise 2
 ----------
 
-When the ``SimplePlot`` process is activated then run a DescribeProcess request.
+When the ``SimplePlot`` process is activated then run a **DescribeProcess** request.
 
 .. tip::
-  Find the process ``identifier`` of ``SimplePlot`` in the GetCapabilities document
-  and adapt the DescribeProcess URL from our previous exercise.
+  Find the process ``identifier`` of ``SimplePlot`` in the **GetCapabilities** document
+  and adapt the **DescribeProcess** URL from our previous exercise.
 
 Excercise 3
 -----------
 
-Run an Execute request with an external NetCDF file.
+Run an **Execute** request with an external NetCDF file.
 
-http://127.0.0.1:5000/wps?SERVICE=WPS&REQUEST=Execute&version=1.0.0&identifier=simple_plot&datainputs=variable=air;dataset=@xlink:href=file:///home/pingu/sandbox/birdhouse/birdhouse-workshop/data
+http://127.0.0.1:5000/wps?service=WPS&request=Execute&version=1.0.0&identifier=simple_plot&datainputs=variable=air;dataset=@xlink:href=file:///home/pingu/sandbox/birdhouse/birdhouse-workshop/data/air.mon.ltm.nc
 
 Execute Request with direct output.
 
