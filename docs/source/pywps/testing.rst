@@ -99,21 +99,30 @@ Exceptions
 **NotEnoughStorage**
   The server does not have enough space available.
 
-In point 3.2.2 the exception was:
+Try the following request:
+
+http://127.0.0.1:5000/wps?service=WPS&request=DescribeProcess
+
+The exception is *MissingParameterValue*:
 
 .. code-block:: xml
 
-  <ows:ExceptionText>Unknown request '{http://www.opengis.net/ows/1.1}GetCapabilities'</ows:ExceptionText>
+  <?xml version="1.0" encoding="UTF-8"?>
+  <ows:ExceptionReport xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/ows/1.1 http://schemas.opengis.net/ows/1.1.0/owsExceptionReport.xsd" version="1.0.0">
+  <ows:Exception exceptionCode="MissingParameterValue" locator="version" >
+    <ows:ExceptionText>Missing version</ows:ExceptionText>
+  </ows:Exception>
+  </ows:ExceptionReport>
 
-Something was wrong in ``ows:GetCapabilities``, the namespace is incorrect it should be ``wps:GetCapabilities``.
+The *version* parameter is missing.
 
-In case of Python error in the called process, PyWPS will dump the Python stack into the *ExceptionReport*.
+In case of Python errors in the called process, PyWPS will dump the Python stack into the *ExceptionReport*.
 
 
 Exercise
 --------
 
-Try *wget* with some of the previouse *DescribeProcess* and *Execute* requests.
+Try ``wget`` with some of the previouse *DescribeProcess* and *Execute* requests.
 
 Links
 -----
