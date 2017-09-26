@@ -13,7 +13,7 @@ If you don't have Conda yet ... we will install it at the beginning of this work
 .. note::
 
   You will need a text-editor to edit Python code. Choose your favorite one ...
-  if you don't have one yet you can try  `Atom <https://atom.io/>`_
+  if you don't have one yet, you can try  `Atom <https://atom.io/>`_
   or `Kate <https://kate-editor.org/>`_.
 
 .. tip::

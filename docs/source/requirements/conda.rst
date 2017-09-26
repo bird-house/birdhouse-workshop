@@ -9,12 +9,24 @@ It was created for Python programs, but it can package and
 distribute software for any language.
 Therefore it allows us to use it for multi-language projects.
 
+Conda allows you to build your own packages and share them via channels on
+`Anaconda Cloud`_.
+There is a community effort to build and maintain packages needed by various projects,
+called `Conda Forge`_.
+
+You can create conda environments with a specified list of packages,
+similar to Python virtualenv.
+These environemnts can be documented by a ``environment.yml`` configuration file
+and shared with others.
+
 .. warning::
 
   In this workshop we will install *all* software packages using `Conda`_.
 
 Installation
 ------------
+
+You don't need admin rights to install conda and conda packages.
 
 Download and install the appropriate Miniconda installer
 from https://conda.io/miniconda.html
@@ -70,3 +82,5 @@ Links
 
 
 .. _Conda: http://conda.io/
+.. _Anaconda Cloud: https://anaconda.org/conda-forge
+.. _Conda Forge: https://conda-forge.org/
