@@ -53,9 +53,11 @@ Your task is to implement a meaningful test for our ``simple_plot`` function.
 
 Start hacking ``plotter.py`` in your favorite editor and run ``pytest`` frequently.
 
-Read the comments carefully to make this work and do not trust every line of code.
+.. warning::
+
+  Read the comments carefully to make this work and *do not trust each line of code*.
 
 Links
 -----
 
-Notebooks, tutorials ...
+* pytest: https://docs.pytest.org/en/latest/
