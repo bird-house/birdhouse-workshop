@@ -59,4 +59,4 @@ Don't forget to test often::
 Links
 -----
 
-https://docs.python.org/3/howto/argparse.html
+* `Python argparse <https://docs.python.org/3/howto/argparse.html>`_
