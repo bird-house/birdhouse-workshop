@@ -14,6 +14,9 @@ Find it on `ReadTheDocs <http://birdhouse-workshop.readthedocs.io/en/latest/>`_.
   * https://github.com/ioos/notebooks_demos/blob/master/notebooks/2017-09-09-hurricane_irma.ipynb
 * http://schubert.atmos.colostate.edu/~cslocum/netcdf_example.html
 
+wps:
+* http://pointclouds.nci.org.au/talks/f4g_pointwps_adamsteer.pdf
+
 pycsw workshop:
 * https://geopython.github.io/pycsw-workshop/index.html
 * https://github.com/geopython/pycsw-workshop/
