@@ -137,7 +137,7 @@ Excercise 3
 
 Run an **Execute** request with an external NetCDF file.
 
-http://127.0.0.1:5000/wps?service=WPS&request=Execute&version=1.0.0&identifier=simple_plot&datainputs=variable=air;dataset=@xlink:href=file:///home/pingu/sandbox/birdhouse/birdhouse-workshop/data/air.mon.ltm.nc
+http://127.0.0.1:5000/wps?service=WPS&request=Execute&version=1.0.0&identifier=simple_plot&datainputs=variable=air;dataset=@xlink:href=https://www.esrl.noaa.gov/psd/thredds/fileServer/Datasets/ncep.reanalysis.derived/surface/air.mon.ltm.nc
 
 Execute Request with direct output.
 
@@ -145,4 +145,4 @@ Execute Request with direct output.
 Links
 -----
 
-Notebooks, tutorials ...
+* `NOAA Thredds Catalog <https://www.esrl.noaa.gov/psd/thredds/catalog.html>`_
