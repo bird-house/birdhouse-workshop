@@ -73,13 +73,15 @@ if __name__ == '__main__':
                         help='a NetCDF file or an OpenDAP URL')
     parser.add_argument('-V', '--variable', nargs='?', default='air',
                         help='variable to plot (default: air)')
-    parser.add_argument('-p', '--projection', nargs='?', default='PlateCarree',
-                        choices=['PlateCarree', 'Mollweide', 'Robinson'],
-                        help='map projection (default: PlateCarree)')
+    # TODO: add a projection parameter
+    # parser.add_argument('-p', '--projection', nargs='?', default='PlateCarree',
+    #                     choices=['PlateCarree', 'Mollweide', 'Robinson'],
+    #                     help='map projection (default: PlateCarree)')
 
     args = parser.parse_args()
     print("dataset={0.dataset}, variable={0.variable}".format(args))
-    # output = simple_plot(resource=args.dataset[0], variable=args.variable)
-    output = simple_plot(resource=args.dataset[0], variable=args.variable,
-                         projection=getattr(ccrs, args.projection)())
+    output = simple_plot(resource=args.dataset[0], variable=args.variable)
+    # TODO: run simple_plot with projection parameter
+    # output = simple_plot(resource=args.dataset[0], variable=args.variable,
+    #                      projection=getattr(ccrs, args.projection)())
     print("Output: {}".format(output))
