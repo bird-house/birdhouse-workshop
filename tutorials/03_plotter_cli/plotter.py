@@ -80,7 +80,8 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
     print("dataset={0.dataset}, variable={0.variable}".format(args))
-    output = simple_plot(resource=args.dataset[0], variable=args.variable)
+    output = simple_plot(resource=args.dataset[0], variable=args.variable,
+                         projection=ccrs.PlateCarree())
     # TODO: run simple_plot with projection parameter
     # output = simple_plot(resource=args.dataset[0], variable=args.variable,
     #                      projection=getattr(ccrs, args.projection)())
