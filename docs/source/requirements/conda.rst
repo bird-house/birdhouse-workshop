@@ -26,7 +26,9 @@ and shared with others.
 Installation
 ------------
 
-You don't need admin rights to install conda and conda packages.
+.. note::
+
+  You don't need admin rights to install conda and conda packages.
 
 Download and install the appropriate Miniconda installer
 from https://conda.io/miniconda.html
@@ -40,6 +42,8 @@ so install the latest Python 3.x and if you find out later you need a Python 2.7
 
 Linux/macOS
 +++++++++++
+
+You can *copy and paste* the following script to install Miniconda with default settings:
 
 .. code-block:: bash
 
