@@ -3,7 +3,8 @@
 PyWPS
 ======
 
-In the following sections we will introduce PyWPS.
+In the following sections we will introduce PyWPS and write a WPS process for a
+simple plot function.
 
 .. toctree::
    :maxdepth: 2

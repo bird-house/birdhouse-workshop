@@ -3,7 +3,8 @@
 Basics
 ======
 
-In the following sections will introduce the basics.
+In the following sections we will write a Python function, which generates a plot
+from a netCDF file.
 
 .. toctree::
    :maxdepth: 2
@@ -12,6 +13,3 @@ In the following sections will introduce the basics.
    basics/testing_plotter
    basics/plotter_cli
 ..   basics/logging
-   basics/jupyter
-   advanced/opendap
-   advanced/esgf
