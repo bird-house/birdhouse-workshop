@@ -8,7 +8,9 @@ Prepare
 
 See :ref:`prepare`.
 
-Activate the conda workshop enviroment::
+Activate the conda workshop enviroment:
+
+.. code-block:: bash
 
     $ source activate workshop
 
@@ -25,34 +27,69 @@ Objectives:
 Run the plotter CLI
 -------------------
 
-Go to the plotter tutorial source::
+Go to the plotter tutorial source:
+
+.. code-block:: bash
 
     $ cd birdhouse-workshop/tutorials/03_plotter_cli
 
-See the command line options of our plotter::
+See the command line options of our plotter:
+
+.. code-block:: bash
 
     $ python plotter.py -h
     usage: plotter.py [-h] [-V [VARIABLE]] dataset
 
-Plot our well-know image::
+Plot our well-know image:
+
+.. code-block:: bash
 
     $ python plotter.py --variable air ../../data/air.mon.ltm.nc
 
 Exercise 1
 -----------
 
-Play a little bit with the command line. Try some other options (``-V``),
+Play a little bit with the command-line options. Try some other options (``-V``),
 use invalid input (water) and skip some arguments.
 
-Exercise 2
+Excercise 2
+-----------
+
+Use external data from a Thredds service, like NOAA:
+
+https://www.esrl.noaa.gov/psd/thredds/catalog/Datasets/ncep.reanalysis.derived/surface/catalog.html
+
+See access methods for a dataset, note *OpenDAP*:
+
+https://www.esrl.noaa.gov/psd/thredds/catalog/Datasets/ncep.reanalysis.derived/surface/catalog.html?dataset=Datasets/ncep.reanalysis.derived/surface/air.mon.ltm.nc
+
+Use *OpenDAP* URLs directly as dataset input:
+
+http://www.esrl.noaa.gov/psd/thredds/dodsC/Datasets/ncep.reanalysis.derived/surface/air.mon.ltm.nc
+
+.. code-block:: bash
+
+    $ python plotter.py --variable air \
+          http://www.esrl.noaa.gov/psd/thredds/dodsC/Datasets/ncep.reanalysis.derived/surface/air.mon.ltm.nc
+
+.. todo::
+  Add screenshot with OpenDAP URL selection.
+
+
+Exercise 3
 ----------
+
+.. todo::
+  Fix projection or add another parameter, e.a show colorbar.
 
 Extend the command line and the plot function with an optional parameter for
 the map projection.
 
 Open your editor on ``plotter.py`` ... and happy hacking.
 
-Don't forget to test often::
+Don't forget to test often:
+
+.. code-block:: bash
 
   $ pytest plotter.py
 
@@ -60,3 +97,4 @@ Links
 -----
 
 * `Python argparse <https://docs.python.org/3/howto/argparse.html>`_
+* `NOAA Thredds Data Service <https://www.esrl.noaa.gov/psd/thredds/catalog.html>`_
