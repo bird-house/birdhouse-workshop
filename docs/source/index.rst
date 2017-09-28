@@ -21,6 +21,7 @@ workshop you will learn how Birdhouse supports this development cycle.
    pywps
    birds
    advanced
+   appendix
 
 .. _Birdhouse: http://bird-house.github.io/
 .. _Web Processing Service: https://www.wikiwand.com/en/Web_Processing_Service
