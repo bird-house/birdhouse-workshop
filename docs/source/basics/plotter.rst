@@ -25,11 +25,15 @@ Objectives:
 Run the plotter
 ---------------
 
-Go to the plotter tutorial source::
+Go to the plotter tutorial source:
+
+.. code-block:: bash
 
     $ cd birdhouse-workshop/tutorials/01_plotter
 
-Try the plotter python module::
+Try the plotter python module:
+
+.. code-block:: bash
 
     $ python plotter.py
     Traceback (most recent call last):
@@ -37,7 +41,9 @@ Try the plotter python module::
       import matplotlib.pylab as plt
     ModuleNotFoundError: No module named 'matplotlib'
 
-Oops, something is missing ... please install the ``matplotlib`` package via conda::
+Oops, something is missing ... please install the ``matplotlib`` package via conda:
+
+.. code-block:: bash
 
     # Let's see what is available
     $ conda search -c conda-forge matplotlib
@@ -49,25 +55,33 @@ Conda will show you a list of packages, which are going to be installed.
 Have a look at this list and answer with ``y`` or just press ``enter``.
 
 We should check now the ``plotter.py`` source code.
-Open the ``plotter.py`` in your favorite editor, some people like ``vim``::
+Open the ``plotter.py`` in your favorite editor, some people like ``vim``:
+
+.. code-block:: bash
 
     $ vim plotter.py
 
 Besides ``matplotlib`` there is another ``import`` for ``netCDF4``.
-Let us install it::
+Let us install it:
+
+.. code-block:: bash
 
     # same procedure as above ...
     $ conda search -c conda-forge netcdf4
     $ conda install -c conda-forge netcdf4
 
-So, we should now be ready to run the plotter::
+So, we should now be ready to run the plotter:
+
+.. code-block:: bash
 
     $ python plotter.py
     Plotting ../data/air.mon.ltm.nc ...
     Plot written to plot.png
 
 A plot was generated. Open it in your favorite image viewer.
-On Ubuntu/LinuxMint you can try *Eye of Gnome*::
+On Ubuntu/LinuxMint you can try *Eye of Gnome*:
+
+.. code-block:: bash
 
     $ eog plot.png
 
@@ -87,7 +101,9 @@ Open the ``plotter.py`` and implement the following features:
 
 You will need an additional Python package, ``cartopy``, which you can install with conda.
 This package is available on the conda-forge channel.
-You need to provide an option with the conda channel::
+You need to provide an option with the conda channel:
+
+.. code-block:: bash
 
     $ conda install -c conda-forge mypackage
 

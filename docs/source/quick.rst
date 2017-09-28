@@ -23,6 +23,7 @@ Basics:
 
 PyWPS:
 
-5. :ref:`pywps_installation`
-6. :ref:`pywps_process`
-7. :ref:`pywps_clients`
+5. :ref:`pywps_intro`
+6. :ref:`pywps_installation`
+7. :ref:`pywps_process`
+8. :ref:`pywps_clients`

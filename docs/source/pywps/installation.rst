@@ -54,9 +54,14 @@ Start the service by running the following command:
 
 .. code-block:: bash
 
+    # change to workshop root folder
+    $ cd birdhouse-workshop/
+    # start demo service
     $ python demo/demo.py
 
-If everything went well you should have a console output as follows::
+If everything went well you should have a console output as follows:
+
+.. code-block:: bash
 
   Configuration file(s) ['demo/default.cfg'] loaded
   starting WPS service on http://localhost:5000/wps
