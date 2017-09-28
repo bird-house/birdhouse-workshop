@@ -6,7 +6,7 @@ Let's do it quick
 Ready
 ---------
 
-1. :ref:`conda`.
+1. :ref:`requirements_conda`.
 
 Steady
 ------
@@ -19,9 +19,10 @@ Go
 Basics:
 
 3. :ref:`plotter`
+4. :ref:`plotter_cli`
 
 PyWPS:
 
-4. :ref:`pywps_installation`
-5. :ref:`pywps_process`
-6. :ref:`pywps_clients`
+5. :ref:`pywps_installation`
+6. :ref:`pywps_process`
+7. :ref:`pywps_clients`
