@@ -132,7 +132,7 @@ When the ``SimplePlot`` process is activated then run a **DescribeProcess** requ
   Find the process ``identifier`` of ``SimplePlot`` in the **GetCapabilities** document
   and adapt the **DescribeProcess** URL from our previous exercise.
 
-Excercise 3
+Exercise 3
 -----------
 
 Run an **Execute** request with an external NetCDF file.
