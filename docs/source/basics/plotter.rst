@@ -40,10 +40,10 @@ Try the plotter python module::
 Oops, something is missing ... please install the ``matplotlib`` package via conda::
 
     # Let's see what is available
-    $ conda search matplotlib
+    $ conda search -c conda-forge matplotlib
 
-    # ... and install it
-    $ conda install matplotlib
+    # ... and install it from the conda-forge channel
+    $ conda install -c conda-forge matplotlib
 
 Conda will show you a list of packages, which are going to be installed.
 Have a look at this list and answer with ``y`` or just press ``enter``.
@@ -57,8 +57,8 @@ Besides ``matplotlib`` there is another ``import`` for ``netCDF4``.
 Let us install it::
 
     # same procedure as above ...
-    $ conda search netcdf4
-    $ conda install netcdf4
+    $ conda search -c conda-forge netcdf4
+    $ conda install -c conda-forge netcdf4
 
 So, we should now be ready to run the plotter::
 
