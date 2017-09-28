@@ -1,4 +1,5 @@
-# birdhouse-workshop
+Birdhouse Workshop
+==================
 
 Workshop on PyWPS and using Birdhouse tools.
 
