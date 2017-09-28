@@ -8,7 +8,9 @@ Requirements
 
 See :ref:`prepare`.
 
-Activate the conda workshop enviroment::
+Activate the conda workshop enviroment:
+
+.. code-block:: bash
 
     $ source activate workshop
 
@@ -37,7 +39,25 @@ Start the demo WPS service:
 
 .. code-block:: bash
 
+    # go to the workshop root folder
+    $ cd birdhouse-workshop/
+    # start wps service
     $ python demo/demo.py
+
+.. warning::
+  The WPS service is running in *foreground*. You need to
+  open a new terminal and activate the conda *workshop* environment
+  for the *birdy* WPS client.
+
+.. tip::
+  You can also start the WPS service in *background*:
+
+    ``$ python demo/demo.py -d``
+
+  Remember the process id to kill the service:
+
+    ``forked process id: 16483``
+
 
 Let birdy know the WPS service URL:
 
@@ -73,6 +93,9 @@ Run ``say_hello``:
 
 OWSLib
 ------
+
+.. todo::
+  Update OWSLib Notebook
 
 `OWSLib <https://geopython.github.io/OWSLib/>`_ is a Python library for client programming
 with Open Geospatial Consortium (OGC) web service (hence OWS), like WMS, CSW and WPS.
@@ -112,15 +135,24 @@ http://localhost:8888/notebooks/owslib-wps.ipynb
 Phoenix
 -------
 
-Just an online example.
+.. todo::
+  Just an online example.
 
-QGIS
-----
 
-Maybe a screenshot.
+Exercise 1
+----------
 
-Exercise
---------
+.. todo::
+
+  Play with birdy ...
+
+Excercise 2
+-----------
+
+.. todo::
+
+  Start the demo service with the processes from the tutorial and call ``simple_plot``
+  with *birdy*.
 
 Links
 -----
