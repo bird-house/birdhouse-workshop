@@ -92,3 +92,11 @@ You can use your DKRZ account and log-in to the DKRZ Compute Cluster to run this
   $ module unload netcdf_c
   # load anaconda module
   $ module load anaconda3
+
+You may start a `Byobu`_ session to have multiple terminal windows:
+
+.. code-block:: bash
+
+  $ byobu
+
+.. _Byobu: http://byobu.co/
