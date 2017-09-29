@@ -8,19 +8,19 @@ Prepare
 
 See :ref:`prepare`.
 
-Activate the conda workshop enviroment::
+Activate the Conda workshop enviroment::
 
     $ source activate workshop
 
 Aim
 ---
 
-We are going to write a simple plot function using matplotlib and cartopy.
+We are going to write a simple plot function in Python using *matplotlib* and *cartopy*.
 
 Objectives:
 
-* You will learn how to install packages with conda.
-* You will learn the basic usage of the NetCDF, matplotlib and cartopy Python libraries.
+* You will learn how to install packages with Conda.
+* You will learn the basic usage of the *netCDF*, *matplotlib* and *cartopy* Python libraries.
 
 Run the plotter
 ---------------
@@ -29,9 +29,9 @@ Go to the plotter tutorial source:
 
 .. code-block:: bash
 
-    $ cd birdhouse-workshop/tutorials/01_plotter
+    $ cd ~/birdhouse-workshop/tutorials/01_plotter
 
-Try the plotter python module:
+Try the plotter Python module:
 
 .. code-block:: bash
 
@@ -41,7 +41,7 @@ Try the plotter python module:
       import matplotlib.pylab as plt
     ModuleNotFoundError: No module named 'matplotlib'
 
-Oops, something is missing ... please install the ``matplotlib`` package via conda:
+Oops, something is missing ... please install the ``matplotlib`` package via Conda:
 
 .. code-block:: bash
 
@@ -54,6 +54,14 @@ Oops, something is missing ... please install the ``matplotlib`` package via con
 Conda will show you a list of packages, which are going to be installed.
 Have a look at this list and answer with ``y`` or just press ``enter``.
 
+.. code-block:: bash
+
+  The following NEW packages will be INSTALLED:
+
+  matplotlib:       2.0.2-py36_2  conda-forge
+
+  Proceed ([y]/n)?
+
 We should check now the ``plotter.py`` source code.
 Open the ``plotter.py`` in your favorite editor, some people like ``vim``:
 
@@ -61,8 +69,14 @@ Open the ``plotter.py`` in your favorite editor, some people like ``vim``:
 
     $ vim plotter.py
 
-Besides ``matplotlib`` there is another ``import`` for ``netCDF4``.
-Let us install it:
+Besides ``matplotlib`` there is another ``import`` for ``netCDF4``:
+
+.. code-block:: python
+
+  from netCDF4 import Dataset
+
+
+Let us install ``netcdf4``:
 
 .. code-block:: bash
 

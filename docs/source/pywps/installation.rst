@@ -17,11 +17,11 @@ Activate the conda workshop enviroment:
 Aim
 ---
 
-We are going to install PyWPS and run some example processes.
+We are going to install *PyWPS* and run some example processes.
 
 Objectives:
 
-* You will learn how to install PyWPS, start a WPS service and execute a process.
+* You will learn how to install `PyWPS`_, start a WPS service and execute a process.
 
 
 Install PyWPS
@@ -55,7 +55,7 @@ Start the service by running the following command:
 .. code-block:: bash
 
     # change to workshop root folder
-    $ cd birdhouse-workshop/
+    $ cd ~/birdhouse-workshop/
     # start demo service
     $ python demo/demo.py
 
@@ -172,3 +172,5 @@ Links
 -----
 
 * `PyWPS Flask Demo <http://pywps-demo.readthedocs.io/en/latest/>`_
+
+.. _PyWPS: http://pywps.org/

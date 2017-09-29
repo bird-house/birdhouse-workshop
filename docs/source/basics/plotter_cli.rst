@@ -8,7 +8,7 @@ Prepare
 
 See :ref:`prepare`.
 
-Activate the conda workshop enviroment:
+Activate the Conda workshop enviroment:
 
 .. code-block:: bash
 
@@ -17,7 +17,7 @@ Activate the conda workshop enviroment:
 Aim
 ---
 
-We are going to write a command line interface (CLI) for our plot function.
+We are going to write a command line interface (CLI) for our Python plot function.
 
 Objectives:
 
@@ -31,7 +31,7 @@ Go to the plotter tutorial source:
 
 .. code-block:: bash
 
-    $ cd birdhouse-workshop/tutorials/03_plotter_cli
+    $ cd ~/birdhouse-workshop/tutorials/03_plotter_cli
 
 See the command line options of our plotter:
 
