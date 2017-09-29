@@ -9,6 +9,11 @@ Clone the workshop repo from Github:
 
     $ git clone https://github.com/bird-house/birdhouse-workshop.git
 
+.. note::
+  In this workshop we assume that your workshop sources are in
+  your home folder ``~/birdhouse-workshop``. If the sources are located at
+  a different place then you need to adapt the workshop root folder accordingly.
+
 Create the *workshop* conda environment:
 
 .. code-block:: bash
