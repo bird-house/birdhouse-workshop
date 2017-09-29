@@ -20,14 +20,15 @@ These environemnts can be documented by a ``environment.yml`` configuration file
 and shared with others.
 
 .. warning::
-
   In this workshop we will install *all* software packages using `Conda`_.
 
 Installation
 ------------
 
 .. note::
+  If you already have Conda/Anaconda installed, you can use it in this workshop.
 
+.. note::
   You don't need admin rights to install conda and conda packages.
 
 Download and install the appropriate Miniconda installer
@@ -36,9 +37,6 @@ from https://conda.io/miniconda.html
 With Anaconda you can create environments that use any Python version (e.g. Python 2.7 or Python 3.6),
 so install the latest Python 3.x and if you find out later you need a Python 2.7 environment, you can create one.
 
-.. note::
-
-  If you already have Conda installed, you can use it in this workshop.
 
 Linux/macOS
 +++++++++++

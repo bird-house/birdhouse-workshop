@@ -7,9 +7,9 @@ Requirements
     You need a good internet connection! We are using GitHub, Conda and external data.
 
 .. warning::
-    Make sure you have enought disk space available!
+    Make sure you have enough *disk space* available!
     Especially when you are using a Virtual Machine.
-    You should have at least 5 GB of disk space available.
+    You should have **at least 5 GB of free disk space** available.
 
 The main requirement of this workshop is :ref:`requirements_conda`.
 It works on most common platforms like Linux, macOS and Windows.

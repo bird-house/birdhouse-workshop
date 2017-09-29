@@ -22,10 +22,13 @@ Activate the conda *workshop* environment (Linux and macOS):
     $ source activate workshop
 
 .. warning::
-
   On *Windows* you use the following command::
 
       $ activate workshop
+
+.. tip::
+  If you are a DKRZ user you can also log-in to the :ref:`DKRZ Compute Cluster <mistral>`
+
 
 I don't have git ...
 --------------------
@@ -69,3 +72,18 @@ a conda ``environment.yml`` file in the top level folder:
 .. code-block:: bash
 
    $ conda env create -f environment.yml
+
+.. _mistral:
+
+Using your DKRZ account (*DKRZ users only*)
+---------------------------------------------
+
+You can use your DKRZ account and log-in to the DKRZ Compute Cluster to run this workshop:
+
+.. code-block:: bash
+
+  $ ssh myname@mistral.dkrz.de
+  # unload conflicting modules
+  $ module unload netcdf_c
+  # load anaconda module
+  $ module load anaconda3
