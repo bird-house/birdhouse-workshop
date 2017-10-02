@@ -135,3 +135,4 @@ Links
 * Cartopy: http://scitools.org.uk/cartopy/
 * `Using cartopy with matplotlib <http://scitools.org.uk/cartopy/docs/latest/matplotlib/intro.html>`_
 * `GeoScience Notebook <https://github.com/koldunovn/python_for_geosciences/blob/master/07%20-%20Other%20modules%20for%20geoscientists.ipynb>`_
+* `PyEarthScience: matplotlib examples <https://github.com/KMFleischer/PyEarthScience/>`_

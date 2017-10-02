@@ -32,7 +32,7 @@ Activate the conda *workshop* environment (Linux and macOS):
       $ activate workshop
 
 .. tip::
-  If you are a DKRZ user you can also log-in to the :ref:`DKRZ Compute Cluster <mistral>`
+  If you are a DKRZ user you can also log-in to the :ref:`DKRZ Compute Cluster <dkrz>`
 
 
 I don't have git ...
@@ -78,16 +78,16 @@ a conda ``environment.yml`` file in the top level folder:
 
    $ conda env create -f environment.yml
 
-.. _mistral:
+.. _dkrz:
 
 Using your DKRZ account (*DKRZ users only*)
 ---------------------------------------------
 
-You can use your DKRZ account and log-in to the DKRZ Compute Cluster to run this workshop:
+You can use your DKRZ account and log-in to `Mistral`_ to run this workshop:
 
 .. code-block:: bash
 
-  $ ssh myname@mistral.dkrz.de
+  $ ssh -X myname@mistral.dkrz.de
   # unload conflicting modules
   $ module unload netcdf_c
   # load anaconda module
@@ -100,3 +100,4 @@ You may start a `Byobu`_ session to have multiple terminal windows:
   $ byobu
 
 .. _Byobu: http://byobu.co/
+.. _Mistral: https://www.dkrz.de/Nutzerportal/dokumentationen/de-mistral
