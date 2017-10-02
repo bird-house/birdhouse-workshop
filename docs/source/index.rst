@@ -14,9 +14,9 @@ workshop you will learn how Birdhouse supports this development cycle.
    :maxdepth: 2
    :caption: Contents:
 
+   quick
    motivation
    requirements
-   quick
    basics
    pywps
    birds

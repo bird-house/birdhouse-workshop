@@ -50,6 +50,9 @@ Start the demo WPS service
 
 This workshop includes a demo service with some example processes. Let's try them.
 
+.. todo::
+    Make port of pywps demo service configurable.
+
 Start the service by running the following command:
 
 .. code-block:: bash
@@ -71,6 +74,12 @@ Service check
 -------------
 
 To test the service, open your internet browser to this address: http://127.0.0.1:5000/wps.
+
+Alternatively, you can also try ``curl``:
+
+.. code-block:: bash
+
+  $ curl "http://127.0.0.1:5000/wps"
 
 You will get an XML exception report by the PyWPS service:
 

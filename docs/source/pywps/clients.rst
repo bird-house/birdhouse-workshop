@@ -17,7 +17,7 @@ Activate the conda workshop enviroment:
 Aim
 ---
 
-We are going to write use howto use a WPS client.
+We are going to use a WPS client.
 
 Objectives:
 
@@ -33,14 +33,14 @@ Install it via conda:
 
 .. code-block:: bash
 
-    $ conda install -c birdhouse birdhouse-birdy
+    $ conda install -c birdhouse -c conda-forge birdhouse-birdy
 
 Start the demo WPS service:
 
 .. code-block:: bash
 
     # go to the workshop root folder
-    $ cd birdhouse-workshop/
+    $ cd ~/birdhouse-workshop/
     # start wps service
     $ python demo/demo.py
 
@@ -102,17 +102,20 @@ with Open Geospatial Consortium (OGC) web service (hence OWS), like WMS, CSW and
 
 We are using an Jupyter notebook to look at some example code.
 
+.. todo::
+  Add ssh tunnel or jupyter console example.
+
 We need to install `Jupyter <https://jupyter.org/>`_ via conda:
 
 .. code-block:: bash
 
-   $ conda install jupyter
+   $ conda install -c conda-forge jupyter
 
 Go to the tutorials folder ``pywps_clients``:
 
 .. code-block:: bash
 
-    $ cd tutorials/pywps_clients
+    $ cd ~/birdhouse-workshop/tutorials/13_pywps_clients
 
 You will find there an Jupyter notebook:
 
@@ -157,7 +160,5 @@ Excercise 2
 Links
 -----
 
-Notebooks, tutorials ...
-
-https://try.jupyter.org/
-https://nbviewer.jupyter.org/
+* https://try.jupyter.org/
+* https://nbviewer.jupyter.org/

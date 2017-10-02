@@ -70,7 +70,7 @@ Change into the tutorials folder ``pywps_logging``:
 
 .. code-block:: bash
 
-    $ cd tutorials/pywps_logging
+    $ cd ~/birdhouse-workshop/tutorials/12_pywps_logging
 
 It contains a ``pywps.cfg`` file with a logging section.
 You can overwrite the default PyWPS configration by starting the PyWPS service
@@ -99,5 +99,4 @@ Add some ``logging`` statements and monitor the service.
 Links
 -----
 
-Notebooks, tutorials ...
-https://github.com/PyWPS/pywps-workshop/blob/master/04-Logging.md
+* `PyWPS workshop <https://github.com/PyWPS/pywps-workshop/blob/master/04-Logging.md>`_

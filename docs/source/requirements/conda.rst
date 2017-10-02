@@ -27,6 +27,7 @@ Installation
 
 .. note::
   If you already have Conda/Anaconda installed, you can use it in this workshop.
+  See: :ref:`dkrz`.
 
 .. note::
   You don't need admin rights to install conda and conda packages.
