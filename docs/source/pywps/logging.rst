@@ -24,7 +24,7 @@ in the configuration file. PyWPS currently logs events to two different location
 * A database where each request to the service is registered.
 
 PyWPS uses `SQLAlchemy <http://www.sqlalchemy.org/>`_ to connect and work with multiple database management systems.
-SQLite and Postgresql tend to be the most used options.
+SQLite and PostgreSQL tend to be the most used options.
 
 Objectives:
 
@@ -61,7 +61,19 @@ On Debian based systems it can be installed from the command line:
 
 .. code-block:: bash
 
-    $ sudo apt install sqlitebrowser.
+    $ sudo apt install sqlitebrowser
+
+See a screenshot with an open SQLite database file ``pywps-logs.sqlite3``:
+
+.. image:: ../_static/dbbrowser.png
+
+You can also use SQLite on the command-line:
+
+.. code-block:: bash
+
+  $ sqlite3 pywps-logs.sqlite3
+  sqlite> select * from pywps_requests;
+  sqlite> .quit
 
 Configure logging
 -----------------
