@@ -32,23 +32,32 @@ Start by trying the *GetCapabilities* request:
 
 .. code-block:: bash
 
-    $ wget -q -O - "http://127.0.0.1:5000/wps?service=WPS&request=GetCapabilities"
+    $ wget -q -O caps.xml \
+      "http://127.0.0.1:5000/wps?service=WPS&request=GetCapabilities"
 
-Important question: Why ``-q``, ``-O -`` and ``"`` in the comnand:
+Important question: Why ``-q``, ``-O`` and ``"`` in the comnand:
 
 ``-q``
   quit verbose information about requests.
-``-O -``
-  Output to file, but since the file is ``-`` the content will be dumped into the prompt.
+``-O``
+  Output to file. You can use ``-``, and the content will be dumped into the prompt.
 ``"``
   Otherwise wget would not consider ``&`` as part of the URL and would cut it.
 
 curl
 ----
 
-.. todo::
-  Add curl example
+Similar to *wget* you can also use *curl* to retrieve the *GetCapabilities* XML document:
 
+.. code-block:: bash
+
+  $ curl -s -o caps.xml \
+    "http://127.0.0.1:5000/wps?service=WPS&request=GetCapabilities"
+
+``-s``
+    silent mode ... no progress bar.
+``-o``
+  Output to file. You can use ``-``, and the content will be dumped into the prompt.
 
 XML Request using RESTClient
 ----------------------------
@@ -115,7 +124,7 @@ In case of Python errors in the called process, PyWPS will dump the Python stack
 Exercise
 --------
 
-Try ``wget`` with some of the previouse *DescribeProcess* and *Execute* requests.
+Try ``wget`` or ``curl`` with some of the previouse *DescribeProcess* and *Execute* requests.
 
 Links
 -----
