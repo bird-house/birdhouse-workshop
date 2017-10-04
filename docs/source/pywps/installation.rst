@@ -70,6 +70,14 @@ If everything went well you should have a console output as follows:
   starting WPS service on http://localhost:5000/wps
     * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 
+.. warning::
+  If you need to start the service on a different port then 5000, you must edit
+  the port in the PyWPS configuration ``demo/default.cfg``::
+
+    [server]
+    url = http://localhost:5001/wps
+    outputurl = http://localhost:5001/outputs
+
 Service check
 -------------
 
