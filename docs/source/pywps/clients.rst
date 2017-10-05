@@ -21,13 +21,12 @@ We are going to use a WPS client.
 
 Objectives:
 
-* You will learn how to use a WPS client.
-* You will learn to use Jupyter Notebooks.
+* You will learn how to use WPS clients.
 
 Birdy
 -----
 
-`Birdy <http://birdy.readthedocs.io/en/latest/>`_ is a command-line client for Web Processing Services.
+`Birdy`_ is a command-line client for Web Processing Services.
 
 Install it via conda:
 
@@ -90,51 +89,6 @@ Run ``say_hello``:
     Output:
     response=Hello Birdy
 
-
-OWSLib
-------
-
-.. todo::
-  Update OWSLib Notebook
-
-`OWSLib <https://geopython.github.io/OWSLib/>`_ is a Python library for client programming
-with Open Geospatial Consortium (OGC) web service (hence OWS), like WMS, CSW and WPS.
-
-We are using an Jupyter notebook to look at some example code.
-
-.. todo::
-  Add ssh tunnel or jupyter console example.
-
-We need to install `Jupyter <https://jupyter.org/>`_ via conda:
-
-.. code-block:: bash
-
-   $ conda install -c conda-forge jupyter
-
-Go to the tutorials folder ``pywps_clients``:
-
-.. code-block:: bash
-
-    $ cd ~/birdhouse-workshop/tutorials/13_pywps_clients
-
-You will find there an Jupyter notebook:
-
-.. code-block:: bash
-
-    $ ls
-    owslib-wps.ipynb
-
-Open the Jupyter notebook:
-
-.. code-block:: bash
-
-   $ jupyter notebook
-
-And point your browser to the following URL:
-
-http://localhost:8888/notebooks/owslib-wps.ipynb
-
-
 Phoenix
 -------
 
@@ -160,5 +114,8 @@ Excercise 2
 Links
 -----
 
-* https://try.jupyter.org/
-* https://nbviewer.jupyter.org/
+* `Birdy`_
+* `Phoenix`_
+
+.. _Birdy: http://birdy.readthedocs.io/en/latest/
+.. _Phoenix: http://pyramid-phoenix.readthedocs.io/en/latest/
