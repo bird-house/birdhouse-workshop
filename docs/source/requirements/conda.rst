@@ -76,7 +76,7 @@ Check your Python version
 We are using Python 3.6::
 
   $ which python
-  $HOME/miniconda3/bin/python
+  ~/miniconda3/bin/python
   $ python --version
   Python 3.6.2 :: Continuum Analytics, Inc.
 

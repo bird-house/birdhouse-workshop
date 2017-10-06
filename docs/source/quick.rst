@@ -19,11 +19,12 @@ Go
 Basics:
 
 3. :ref:`plotter`
-4. :ref:`plotter_cli`
+4. :ref:`testing_plotter`
+5. :ref:`plotter_cli`
 
 PyWPS:
 
-5. :ref:`pywps_intro`
-6. :ref:`pywps_installation`
-7. :ref:`pywps_process`
-8. :ref:`pywps_clients`
+6. :ref:`pywps_intro`
+7. :ref:`pywps_installation`
+8. :ref:`pywps_process`
+9. :ref:`pywps_clients`
