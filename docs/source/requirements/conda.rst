@@ -84,7 +84,8 @@ Links
 -----
 
 * https://www.anaconda.com/blog/developer-blog/conda-data-science/
-* https://github.com/ioos/notebooks_demos/blob/master/webpage/other_resources.md
+* https://docs.anaconda.com/docs_oss/conda/install/quick
+* https://docs.anaconda.com/docs_oss/conda/test-drive
 
 
 .. _Conda: http://conda.io/
