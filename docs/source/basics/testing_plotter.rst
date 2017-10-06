@@ -56,8 +56,8 @@ Run now *pytest* on our plotting module:
 
 Oops ... the test is not working yet.
 
-Excercise
----------
+Exercise
+--------
 
 Your task is to implement a meaningful test for our ``simple_plot`` function.
 

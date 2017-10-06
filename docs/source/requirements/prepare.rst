@@ -50,7 +50,7 @@ If things go wrong ...
 
 Well, this can happen ... you can easily get into troubles with resolving conda
 package dependencies. The easiest way to solve it is *tabula rasa* ... remove
-the conda environment at install it from new.
+the conda environment and install it from new.
 
 Deactivate the current environment (Linux and MacOS):
 
