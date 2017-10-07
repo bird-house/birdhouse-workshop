@@ -11,8 +11,8 @@ Who is using Birdhouse?
 * IPSL/LSCE: http://www.icrc-cordex2016.org/images/pdf/Programme/presentations/parallel_A3/A3_4_Hempelmann.pdf
 * KIT: https://presentations.copernicus.org/EGU2017-8627_presentation.pdf
 
-Links Links Links
------------------
+Links
+-----
 
 Birdhouse:
 

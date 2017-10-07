@@ -6,7 +6,7 @@ Live Demo
 Phoenix
 -------
 
-Showing Phoenix with CDO, Spotchecker and Subsetting process on ESGF, OpenDAP and uploaded data.
+Showing Phoenix with CDO, Spotchecker and Subsetting process with ESGF, OpenDAP and uploaded data.
 
 Birdy
 -----
