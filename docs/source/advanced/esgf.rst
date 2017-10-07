@@ -1,7 +1,7 @@
 .. _advanced_esgf:
 
-Advanced ESGF
-=============
+ESGF
+====
 
 
 Using ESGF pyclient to access ESGF data

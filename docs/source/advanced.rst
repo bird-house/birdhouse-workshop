@@ -10,5 +10,4 @@ In the following sections we will go into advanced topics.
 
    advanced/owslib
    advanced/esgf
-..   advanced/opendap
-   advanced/twitcher
+   advanced/docker
