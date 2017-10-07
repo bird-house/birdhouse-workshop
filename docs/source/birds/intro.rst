@@ -14,7 +14,8 @@ Birdhouse is the *Home* of several *Birds*, the components of the Birdhouse ecos
 There are birds for the Web Processing client side, to make the WPS service access more convenient
 and also as an example for project own Web UIs. There are fully configured WPS services with
 example processes, which run *out-of-the-box* and can be forked and used as template.
-There is also a middleware component to control the access to WPS services.
+There is also a middleware component to
+`control access to WPS services <http://twitcher.readthedocs.io/en/latest/>`_.
 
 The Birdhouse documentation gives an
 `overview of the architecture <http://birdhouse.readthedocs.io/en/latest/overview.html>`_.
@@ -26,6 +27,8 @@ for details.
 All Birdhouse components are Open Source and released under the `Apache License`_.
 The source code is available on `GitHub`_.
 
+See the documentation of the `Birdhouse components <http://birdhouse.readthedocs.io/en/latest/projects.html>`_
+and `try the demo <https://mouflon.dkrz.de/>`_.
 
 
 .. _Birdhouse: http://bird-house.github.io/
