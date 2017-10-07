@@ -1,7 +1,7 @@
 .. _birds:
 
-Birds
-=====
+The Birds
+=========
 
 In the following sections we will introduce the Birds.
 
