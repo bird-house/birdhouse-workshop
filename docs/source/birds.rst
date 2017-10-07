@@ -9,6 +9,4 @@ In the following sections we will introduce the Birds.
    :maxdepth: 2
 
    birds/intro
-..   birds/phoenix
-   birds/emu
-   advanced/twitcher
+   birds/live_demo
