@@ -67,8 +67,7 @@ Windows
 
 Run the installer, choose *Just Me* (not *All Users*), and choose a *Install Location* owned by you.
 
-.. todo::
-  Screenshots for Windows installation.
+See also the `Conda documentaion <https://conda.io/docs/user-guide/install/windows.html>`_
 
 Check your Python version
 -------------------------
