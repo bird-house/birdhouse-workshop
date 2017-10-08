@@ -63,9 +63,13 @@ See access methods for a dataset, note *OpenDAP*:
 
 https://www.esrl.noaa.gov/psd/thredds/catalog/Datasets/ncep.reanalysis.derived/surface/catalog.html?dataset=Datasets/ncep.reanalysis.derived/surface/air.mon.ltm.nc
 
+.. image:: ../_static/thredds-access-urls.png
+
 Use *OpenDAP* URLs directly as dataset input:
 
 http://www.esrl.noaa.gov/psd/thredds/dodsC/Datasets/ncep.reanalysis.derived/surface/air.mon.ltm.nc
+
+.. image:: ../_static/opendap-data-url.png
 
 .. code-block:: bash
 
