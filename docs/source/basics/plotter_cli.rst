@@ -76,9 +76,6 @@ http://www.esrl.noaa.gov/psd/thredds/dodsC/Datasets/ncep.reanalysis.derived/surf
     $ python plotter.py --variable air \
           http://www.esrl.noaa.gov/psd/thredds/dodsC/Datasets/ncep.reanalysis.derived/surface/air.mon.ltm.nc
 
-.. todo::
-  Add screenshot with OpenDAP URL selection.
-
 
 Exercise 3
 ----------
