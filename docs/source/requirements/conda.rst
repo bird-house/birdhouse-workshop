@@ -65,7 +65,7 @@ make Miniconda the Python found first than the system Python:
 Windows
 +++++++
 
-Run the installer, choose *Just Me* (not *All Users*), and choose a *Install Location* owned by you.
+Run the installer, choose **Just Me** (not **All Users**), and choose a **Install Location** owned by you.
 
 See also the `Conda documentaion <https://conda.io/docs/user-guide/install/windows.html>`_
 
