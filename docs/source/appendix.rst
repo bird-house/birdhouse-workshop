@@ -3,13 +3,62 @@
 Appendix
 ========
 
-Who is using Birdhouse?
------------------------
+Who is using WPS?
+-----------------
 
-* Copernicus: http://climate.copernicus.eu/
-* CRIM/Ouranos: http://www.crim.ca/media/publication/fulltext/agu2016_presentation_short_ouranos.pdf
-* IPSL/LSCE: http://www.icrc-cordex2016.org/images/pdf/Programme/presentations/parallel_A3/A3_4_Hempelmann.pdf
-* KIT: https://presentations.copernicus.org/EGU2017-8627_presentation.pdf
+Copernicus, EU Project
+######################
+
+* Copernicus Climate Change Service: http://climate.copernicus.eu/
+* WPS Demo: https://github.com/cp4cds/copernicus-wps-demo
+
+CEDA/STFC, UK
+##############
+
+* CEDA: http://www.ceda.ac.uk/
+* STFC: http://www.stfc.ac.uk/
+* COWS WPS: http://wps-web1.ceda.ac.uk/ui/home
+
+IPSL/LSCE, France
+#################
+
+* IPSL: https://www.ipsl.fr/en/
+* LSCE: http://www.lsce.ipsl.fr/
+* `Talk at Euro Cordex 2016 <http://www.icrc-cordex2016.org/images/pdf/Programme/presentations/parallel_A3/A3_4_Hempelmann.pdf>`_
+* `Paper about Flyingpigeon (in Review) <https://hal.archives-ouvertes.fr/hal-01375615>`_
+
+KNMI, Netherlands
+#################
+
+* KNMI: http://www.knmi.nl/
+* Climate4Impact Portal: https://climate4impact.eu/
+
+ESGF: lead by LLNL, US
+######################
+
+* LLNL: https://www.llnl.gov/
+* ESGF Project: https://esgf.llnl.gov/
+* Compute WPS https://github.com/ESGF/esgf-compute-wps
+
+CRIM/Ouranos, Canada
+####################
+
+* CRIM: http://www.crim.ca/en/
+* Ouranos: https://www.ouranos.ca/en/
+* `Talk at AGU 2016 <http://www.crim.ca/media/publication/fulltext/agu2016_presentation_short_ouranos.pdf>`_
+
+NCI, Australia
+##############
+
+* NCI: http://nci.org.au/
+* `Talk about WPS for Pointclouds <http://pointclouds.nci.org.au/talks/f4g_pointwps_adamsteer.pdf>`_
+
+KIT, Germany
+############
+
+* KIT: http://www.kit.edu/english/
+* `Talk at EGU 2017 <https://presentations.copernicus.org/EGU2017-8627_presentation.pdf>`_
+
 
 Links
 -----
@@ -25,10 +74,6 @@ WPS:
 * http://geoprocessing.info/index.html
 * PyWPS: http://pywps.org/
 * PyWPS Workshop: https://github.com/PyWPS/pywps-workshop
-
-WPS Talks:
-
-* Pointclouds talk by NCI: http://pointclouds.nci.org.au/talks/f4g_pointwps_adamsteer.pdf
 
 Conda:
 
