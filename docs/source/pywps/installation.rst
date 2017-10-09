@@ -197,6 +197,8 @@ Please find it and run an execute request ... you need to know the input paramet
 Links
 -----
 
+* `PyWPS Workshop <https://github.com/PyWPS/pywps-workshop/blob/master/01-Installation.md>`_
 * `PyWPS Flask Demo <http://pywps-demo.readthedocs.io/en/latest/>`_
+* `Geoprocessing Info <http://geoprocessing.info/wpsdoc/1x0GetCapabilities>`_
 
 .. _PyWPS: http://pywps.org/
