@@ -215,22 +215,25 @@ and you need to poll the status document given by the **statusLocation** URL:
     </wps:Status>
   </wps:ExecuteResponse>
 
-.. not working with pywps on python 3
-  Exercise 5
-  ----------
+Exercise 5
+----------
 
-  You can also return the output directly. For this modify the above request
-  and add the ``RawDataOutput`` parameter:
+You can also return the output directly. For this modify the above request
+and add the ``RawDataOutput`` parameter:
 
-  .. code-block:: bash
+.. code-block:: bash
 
-    http://127.0.0.1:5000/wps?
-        Service=WPS&
-        Request=Execute&
-        Version=1.0.0&
-        Identifier=PLOT_IDENTIFIER&
-        DataInputs=variable=air;dataset=@xlink:href=NC_URL&
-        RawDataOutput=output
+  http://127.0.0.1:5000/wps?
+      Service=WPS&
+      Request=Execute&
+      Version=1.0.0&
+      Identifier=PLOT_IDENTIFIER&
+      DataInputs=variable=air;dataset=@xlink:href=NC_URL&
+      RawDataOutput=output
+
+.. warning::
+  Due to a bug in PyWPS it works currently only with Python 2.7.
+
 
 Links
 -----
