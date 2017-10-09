@@ -22,6 +22,18 @@ Why using WPS?
   * Improved research quality.
   * Participate to intercomparison projects.
 
+* Access to external resources
+
+  * large climate data stores
+  * compute resources
+  * complex software systems
+
+* Cross institutional, cross-community
+
+ * depends *only* on an open standard interface.
+ * several implementations for a Processing Service can be used.
+ * clients (web portals) can rely on a stable processing service interface.
+
 .. Function as a Service: https://en.wikipedia.org/wiki/Function_as_a_Service
 
 Who is using WPS?
@@ -86,6 +98,12 @@ KIT, Germany
 
 * KIT: http://www.kit.edu/english/
 * `Talk at EGU 2017 <https://presentations.copernicus.org/EGU2017-8627_presentation.pdf>`_
+
+APEC Climate Center, South Korea
+################################
+
+* APCC: http://www.apcc21.org/
+* `Talk at FOSS4G, Bonn, 2016 <http://pywps.org/science/pub/Seongkyu_Lee-FOSS4G_BONN_2016_Poster_v1_1c.pdf>`_
 
 
 Links
