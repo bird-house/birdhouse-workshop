@@ -59,8 +59,17 @@ Similar to *wget* you can also use *curl* to retrieve the *GetCapabilities* XML 
 ``-o``
   Output to file. You can use ``-``, and the content will be dumped into the prompt.
 
-XML Request using RESTClient
-----------------------------
+RESTClient (Firefox only)
+-------------------------
+
+You can use the `RestClient`_ Firefox plugin run requests.
+
+Here is an example with a **GET** request:
+
+.. image:: ../_static/rest-client-get.png
+
+Post Request
+------------
 
 As requests and data become more structure and lengthy, concatenating all
 parameters into a URL for a GET type request becomes difficult or impossible.
@@ -69,10 +78,6 @@ sent to the server using the POST method of the HTTP protocol.
 
 It is also possible to use wget (or curl) for POST requests but then the
 command line becomes to extensive.
-
-Works only on Firefox:
-
-http://restclient.net/
 
 .. todo::
 
@@ -129,5 +134,6 @@ Try ``wget`` or ``curl`` with some of the previouse *DescribeProcess* and *Execu
 Links
 -----
 
+* `RestClient <http://restclient.net/>`_
 * `Poster on Chrome <https://chrome.google.com/webstore/detail/chrome-poster/cdjfedloinmbppobahmonnjigpmlajcd>`_
 * `PyWPS workshop <https://github.com/PyWPS/pywps-workshop/blob/master/03-Testing.md>`_
