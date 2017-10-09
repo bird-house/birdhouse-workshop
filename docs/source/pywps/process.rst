@@ -54,7 +54,7 @@ Change into the tutorial ``processes`` folder:
 
 .. code-block:: bash
 
-  $ cd birdhouse-workshop/tutorials/10_plotter_process/processes
+  $ cd ~/birdhouse-workshop/tutorials/10_plotter_process/processes
 
 You can find here the ``plotter.py`` module from our previous exercise:
 
