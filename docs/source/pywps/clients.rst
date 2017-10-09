@@ -92,30 +92,37 @@ Run ``say_hello``:
 Phoenix
 -------
 
-.. todo::
-  Just an online example.
+`Phoenix`_ is `Pyramid`_ web-application to interact with WPS services.
 
+.. image:: ../_static/phoenix.png
+
+You can try the online `demo`_.
 
 Exercise 1
 ----------
 
-.. todo::
+Play with birdy ... run the ``sleep`` process.
 
-  Play with birdy ...
-
-Excercise 2
+Exercise 2
 -----------
 
-.. todo::
+Start the demo service with the processes from :ref:`pywps_testing` and call
+the ``simple_plot`` process with **birdy**.
 
-  Start the demo service with the processes from the tutorial and call ``simple_plot``
-  with *birdy*.
+Exercise 3
+----------
+
+Try some of the processes on the Phoenix `demo`_. For example the
+**wordcounter** and the **spotchecker**.
 
 Links
 -----
 
 * `Birdy`_
 * `Phoenix`_
+* `Pyramid`_
 
 .. _Birdy: http://birdy.readthedocs.io/en/latest/
 .. _Phoenix: http://pyramid-phoenix.readthedocs.io/en/latest/
+.. _Pyramid: https://trypyramid.com/
+.. _demo: https://mouflon.dkrz.de/
