@@ -13,13 +13,11 @@ DATADIR = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..', '..', '
 AIR_DS = os.path.join(DATADIR, 'air.mon.ltm.nc')
 
 
-def simple_plot(resource, variable=None, projection=None, output='plot.png'):
+def simple_plot(resource, variable=None, timestep=0, output='plot.png'):
     """
     Generates a nice and simple plot.
     """
-    print("Plotting {} ...".format(resource))
-    projection = projection or ccrs.PlateCarree()
-    print("Using map projection {}".format(projection))
+    print("Plotting {}, timestep {} ...".format(resource, timestep))
 
     # Create dataset from resource ... a local NetCDF file or a remote OpenDAP URL
     ds = Dataset(resource)
@@ -31,10 +29,10 @@ def simple_plot(resource, variable=None, projection=None, output='plot.png'):
     fig = plt.figure(figsize=(20, 10))
 
     # add projection
-    ax = plt.axes(projection=projection)
+    ax = plt.axes(projection=ccrs.PlateCarree())
 
-    # Render a contour plot for the first timestep
-    plt.contourf(values[0, :, :])
+    # Render a contour plot for the timestep
+    plt.contourf(values[timestep, :, :])
 
     # add background image with coastlines
     ax.stock_img()
@@ -73,13 +71,17 @@ if __name__ == '__main__':
                         help='a NetCDF file or an OpenDAP URL')
     parser.add_argument('-V', '--variable', nargs='?', default='air',
                         help='variable to plot (default: air)')
-    parser.add_argument('-p', '--projection', nargs='?', default='PlateCarree',
-                        choices=['PlateCarree', 'Mollweide', 'Robinson'],
-                        help='map projection (default: PlateCarree)')
+    # add an optional timestep parameter
+    parser.add_argument('-t', '--timestep', nargs='?', default=0, type=int,
+                        help='timestep to plot (default: 0)')
+    # add an optional output paramter for the output filename
+    parser.add_argument('-o', '--output', nargs='?', default='plot.png',
+                        help='output filename of plot (default: plot.png)')
 
     args = parser.parse_args()
     print("dataset={0.dataset}, variable={0.variable}".format(args))
-    # output = simple_plot(resource=args.dataset[0], variable=args.variable)
+    # run simple_plot with timestep parameter
     output = simple_plot(resource=args.dataset[0], variable=args.variable,
-                         projection=getattr(ccrs, args.projection)())
+                         timestep=args.timestep,
+                         output=args.output)
     print("Output: {}".format(output))
