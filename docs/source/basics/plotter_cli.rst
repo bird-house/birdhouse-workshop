@@ -80,11 +80,8 @@ http://www.esrl.noaa.gov/psd/thredds/dodsC/Datasets/ncep.reanalysis.derived/surf
 Exercise 3
 ----------
 
-.. todo::
-  Fix projection or add another parameter, e.a show colorbar.
-
-Extend the command line and the plot function with an optional parameter for
-the map projection.
+Extend the command line and with an optional parameter for
+the ``timestep`` to be plotted.
 
 Open your editor on ``plotter.py`` ... and happy hacking.
 
@@ -93,6 +90,12 @@ Don't forget to test often:
 .. code-block:: bash
 
   $ pytest plotter.py
+
+Exercise 4
+----------
+
+The output name of the plot is always ``plot.png``. Add an optional ``output``
+parameter to set an output filename.
 
 Links
 -----
