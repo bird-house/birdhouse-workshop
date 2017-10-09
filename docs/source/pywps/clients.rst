@@ -27,6 +27,8 @@ Birdy
 -----
 
 `Birdy`_ is a command-line client for Web Processing Services.
+It is using the Python library `OWSLib <https://geopython.github.io/OWSLib/>`_
+to interact with WPS services.
 
 Install it via conda:
 
@@ -121,6 +123,7 @@ Links
 * `Birdy`_
 * `Phoenix`_
 * `Pyramid`_
+* :ref:`advanced_owslib` example
 
 .. _Birdy: http://birdy.readthedocs.io/en/latest/
 .. _Phoenix: http://pyramid-phoenix.readthedocs.io/en/latest/

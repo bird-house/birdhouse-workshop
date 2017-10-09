@@ -3,8 +3,6 @@
 OWSLib
 =======
 
-.. todo::
-  Update OWSLib Notebook
 
 `OWSLib <https://geopython.github.io/OWSLib/>`_ is a Python library for client programming
 with Open Geospatial Consortium (OGC) web service (hence OWS), like WMS, CSW and WPS.
@@ -42,6 +40,9 @@ Open the Jupyter notebook:
 And point your browser to the following URL:
 
 http://localhost:8888/notebooks/owslib-wps.ipynb
+
+Or see it on
+`GitHub <https://github.com/bird-house/birdhouse-workshop/blob/master/tutorials/31_owslib/owslib-wps.ipynb>`_.
 
 Links
 -----
