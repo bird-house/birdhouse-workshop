@@ -80,13 +80,16 @@ Here is an example with an **Execute** request using HTTP method **POST**:
 
 .. image:: ../_static/rest-client-post.png
 
-It is using the XML description of the **Execute** request.
+It is using the
+`XML description <https://github.com/bird-house/birdhouse-workshop/blob/master/tutorials/11_pywps_testing/execute_req.xml>`_
+of the **Execute** request.
 
 It is also possible to use curl (or wget) for POST requests:
 
 .. code-block:: bash
 
-  $ curl -H "Content-Type: text/xml" -X POST -d@execute_req.xml  http://localhost:5000/wps
+  $ curl -H "Content-Type: text/xml" -X POST \
+    -d@execute_req.xml http://localhost:5000/wps
 
 ``-d@``
   pass data from the given filename (XML payload)
