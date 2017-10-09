@@ -100,7 +100,6 @@ It is also possible to use curl (or wget) for POST requests:
 ``-H``
   Header variable, in our case we set the Content-Type.
 
-
 Exceptions
 ----------
 
@@ -122,6 +121,10 @@ Try the following request:
 
 http://127.0.0.1:5000/wps?service=WPS&request=DescribeProcess
 
+.. code-block:: bash
+
+  $ curl "http://127.0.0.1:5000/wps?service=WPS&request=DescribeProcess"
+
 The exception is *MissingParameterValue*:
 
 .. code-block:: xml
@@ -138,10 +141,32 @@ The *version* parameter is missing.
 In case of Python errors in the called process, PyWPS will dump the Python stack into the *ExceptionReport*.
 
 
-Exercise
---------
+Exercise 1
+----------
 
-Try ``wget`` or ``curl`` with some of the previouse *DescribeProcess* and *Execute* requests.
+Try ``wget`` or ``curl`` with some of the previous *DescribeProcess* and *Execute* requests.
+
+Exercise 2
+----------
+
+Run the **POST** request using the prepared XML payload.
+
+Change into the tutorial ``processes`` folder:
+
+.. code-block:: bash
+
+  $ cd ~/birdhouse-workshop/tutorials/11_pywps_testing
+
+Make sure no WPS service is running ... stop it with ``CTRL-c``.
+
+Start the demo service:
+
+.. code-block:: bash
+
+    $ python ../../demo/demo.py
+
+Use the above ``curl`` command with the payload ``execute_req.xml``, which you can find in this folder.
+Modify the input parameters of the payload.
 
 Links
 -----
