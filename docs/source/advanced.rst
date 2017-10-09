@@ -11,3 +11,4 @@ In the following sections we will go into advanced topics.
    advanced/owslib
    advanced/esgf
    advanced/docker
+   advanced/travis
