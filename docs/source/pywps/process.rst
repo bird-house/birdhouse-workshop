@@ -100,7 +100,7 @@ Change into the tutorials folder:
 
 .. code-block:: bash
 
-    $ cd birdhouse-workshop/tutorials/10_plotter_process
+    $ cd ~/birdhouse-workshop/tutorials/10_plotter_process
 
 Start the WPS service:
 
@@ -111,6 +111,10 @@ Start the WPS service:
 Check if the service is running:
 
 http://127.0.0.1:5000/wps?service=WPS&request=GetCapabilities
+
+.. code-block:: bash
+
+   $ curl "http://127.0.0.1:5000/wps?service=WPS&request=GetCapabilities"
 
 Notice that the ``simple_plot`` service is not activated. Well, time to exercise ...
 
@@ -135,9 +139,43 @@ When the ``SimplePlot`` process is activated then run a **DescribeProcess** requ
 Exercise 3
 -----------
 
-Run an **Execute** request with an external NetCDF file.
+Run an **Execute** request with a remote netCDF file from a
+`Thredds data server <https://www.esrl.noaa.gov/psd/thredds/catalog/Datasets/ncep.reanalysis.derived/surface/catalog.html?dataset=Datasets/ncep.reanalysis.derived/surface/air.mon.ltm.nc>`_.
 
-http://127.0.0.1:5000/wps?service=WPS&request=Execute&version=1.0.0&identifier=simple_plot&datainputs=variable=air;dataset=@xlink:href=https://www.esrl.noaa.gov/psd/thredds/fileServer/Datasets/ncep.reanalysis.derived/surface/air.mon.ltm.nc
+Use the following request URL.
+
+.. code-block:: bash
+
+  http://127.0.0.1:5000/wps?
+      Service=WPS&
+      Request=Execute&
+      Version=1.0.0&
+      Identifier=PLOT_IDENTIFIER&
+      DataInputs=variable=air;dataset=@xlink:href=NC_URL
+
+Or in one line:
+
+http://127.0.0.1:5000/wps?Service=WPS&Request=Execute&Version=1.0.0&Identifier=PLOT_IDENTIFIER&DataInputs=variable=air;dataset=@xlink:href=NC_URL
+
+You need to replace **PLOT_IDENTIFIER** with the correct
+processes identifier. Replace **NC_URL** with a remote netCDF data file (HTTP, not OpenDAP),
+for example:
+
+  https://www.esrl.noaa.gov/psd/thredds/fileServer/Datasets/ncep.reanalysis.derived/surface/air.mon.ltm.nc
+
+Notice that the output will be returned as reference, for example:
+
+.. code-block:: xml
+  :emphasize-lines: 5
+
+  <wps:ProcessOutputs>
+    <wps:Output>
+      <ows:Identifier>output</ows:Identifier>
+      <ows:Title>Simple Plot</ows:Title>
+      <wps:Reference xlink:href="http://localhost:5000/outputs/4d075e9a-acf4-11e7-9396-acde48001122/plot_ex33_nbf.png" mimeType="image/png"/>
+    </wps:Output>
+  </wps:ProcessOutputs>
+
 
 .. todo::
   Execute Request with direct output.
@@ -146,4 +184,6 @@ http://127.0.0.1:5000/wps?service=WPS&request=Execute&version=1.0.0&identifier=s
 Links
 -----
 
+* `PyWPS workshop <https://github.com/PyWPS/pywps-workshop/blob/master/02-Process.md>`_
+* `Geoprocessing Info <http://geoprocessing.info/wpsdoc/1x0ExecuteGET>`_
 * `NOAA Thredds Catalog <https://www.esrl.noaa.gov/psd/thredds/catalog.html>`_
