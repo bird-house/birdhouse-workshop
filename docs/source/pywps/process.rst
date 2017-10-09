@@ -195,6 +195,9 @@ by adding the parameters ``storeExecuteResponse=true`` and ``status=true``.
       storeExecuteResponse=true&
       status=true
 
+.. warning::
+  Asynchronous requests do not work on Windows.
+
 In this case you will a response, which tells you that the process has been accepted,
 and you need to poll the status document given by the **statusLocation** URL:
 
