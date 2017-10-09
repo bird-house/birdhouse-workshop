@@ -168,6 +168,10 @@ Start the demo service:
 Use the above ``curl`` command with the payload ``execute_req.xml``, which you can find in this folder.
 Modify the input parameters of the payload.
 
+.. note::
+  There is another POST request example in the
+  `point-clouds talk by NCI <http://pointclouds.nci.org.au/talks/f4g_pointwps_adamsteer.pdf>`_.
+
 Links
 -----
 
