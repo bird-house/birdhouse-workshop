@@ -21,7 +21,8 @@ We are going to use a WPS client.
 
 Objectives:
 
-* You will learn how to use WPS clients.
+* You will learn how to use the Birdy WPS clients.
+* You can try an online demo with the Phoenix Web UI.
 
 Birdy
 -----
@@ -34,7 +35,7 @@ Install it via conda:
 
 .. code-block:: bash
 
-    $ conda install -c birdhouse -c conda-forge birdhouse-birdy
+    $ conda install -c birdhouse -c conda-forge birdhouse-birdy owslib
 
 Start the demo WPS service:
 
@@ -66,6 +67,11 @@ Let birdy know the WPS service URL:
 
     $ export WPS_SERVICE=http://localhost:5000/wps
 
+.. note::
+  On Windows you can use::
+
+    $ set WPS_SERVICE=http://localhost:5000/wps
+
 See which processes are available:
 
 .. code-block:: bash
@@ -90,6 +96,12 @@ Run ``say_hello``:
     [ProcessSucceeded 0/100] PyWPS Process Process Say Hello finished
     Output:
     response=Hello Birdy
+
+.. warning::
+  On Windows the asynchronous call does not work, which birdy uses by default.
+  Use the ``--sync`` option instead::
+
+      $ birdy --sync say_hello --name Birdy
 
 Phoenix
 -------
