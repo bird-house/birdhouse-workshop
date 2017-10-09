@@ -72,17 +72,14 @@ if __name__ == '__main__':
     parser.add_argument('-V', '--variable', nargs='?', default='air',
                         help='variable to plot (default: air)')
     # TODO: add an optional timestep parameter
-    parser.add_argument('-t', '--timestep', nargs='?', default=0, type=int,
-                        help='timestep to plot (default: 0)')
-    # TODO: add an optional output parameter
-    parser.add_argument('-o', '--output', nargs='?', default='plot.png',
-                        help='output name of plot (default: plot.png)')
+    # parser.add_argument('-t', '--timestep', nargs='?', default=0, type=int,
+    #                     help='timestep to plot (default: 0)')
+    # TODO: add an optional output paramter for the output filename
 
     args = parser.parse_args()
     print("dataset={0.dataset}, variable={0.variable}".format(args))
     output = simple_plot(resource=args.dataset[0], variable=args.variable)
     # TODO: run simple_plot with timestep parameter
-    output = simple_plot(resource=args.dataset[0], variable=args.variable,
-                         timestep=args.timestep,
-                         output=args.output)
+    # output = simple_plot(resource=args.dataset[0], variable=args.variable,
+    #                      timestep=args.timestep)
     print("Output: {}".format(output))
