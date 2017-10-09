@@ -32,9 +32,9 @@ Why using WPS?
 
 * Cross institutional, cross-community
 
- * depends *only* on an open standard interface.
- * several implementations for a Processing Service can be used.
- * clients (web portals) can rely on a stable processing service interface.
+  * depends *only* on an open standard interface.
+  * several implementations for a Processing Service can be used.
+  * clients (web portals) can rely on a stable processing service interface.
 
 .. Function as a Service: https://en.wikipedia.org/wiki/Function_as_a_Service
 
@@ -93,7 +93,7 @@ DKRZ, Germany
 
 * DKRZ: https://www.dkrz.de/dkrz-en
 * Birdhouse: http://bird-house.github.io/
-* Metadata Spotchecker etc: https://esgf.llnl.gov/media/2016-F2F/8-12-2016/F2F-2016-Birdhouse.pdf
+* `Talk at ESGF F2F, 2016 <https://esgf.llnl.gov/media/2016-F2F/8-12-2016/F2F-2016-Birdhouse.pdf>`_
 
 KIT, Germany
 ############
