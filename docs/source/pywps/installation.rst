@@ -50,9 +50,6 @@ Start the demo WPS service
 
 This workshop includes a demo service with some example processes. Let's try them.
 
-.. todo::
-    Make port of pywps demo service configurable.
-
 Start the service by running the following command:
 
 .. code-block:: bash
@@ -111,6 +108,10 @@ insert this address in your browser:
 
 http://127.0.0.1:5000/wps?service=WPS&request=GetCapabilities
 
+.. code-block:: bash
+
+  $ curl "http://127.0.0.1:5000/wps?service=WPS&request=GetCapabilities"
+
 In the **GetCapabilities** XML document notice the following:
 
 * Abstract describing service
@@ -137,6 +138,10 @@ insert this address in your browser:
 
 http://127.0.0.1:5000/wps?service=WPS&request=DescribeProcess&version=1.0.0&identifier=say_hello
 
+.. code-block:: bash
+
+  $ curl "http://127.0.0.1:5000/wps?service=WPS&request=DescribeProcess&version=1.0.0&identifier=say_hello"
+
 The resulting XML document tells us something about the *input* and *output* parameters,
 for example there is an input parameter ``name``:
 
@@ -155,6 +160,10 @@ for example there is an input parameter ``name``:
 Let us now execute the ``say_hello`` process with an input parameter ``name`` *Birdy*:
 
 http://127.0.0.1:5000/wps?service=WPS&request=Execute&version=1.0.0&identifier=say_hello&DataInputs=name=Birdy
+
+.. code-block:: bash
+
+  $ curl "http://127.0.0.1:5000/wps?service=WPS&request=Execute&version=1.0.0&identifier=say_hello&DataInputs=name=Birdy"
 
 If all went well, you get an output parameter with the value *Hello Birdy*:
 
