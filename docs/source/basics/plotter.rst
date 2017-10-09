@@ -93,11 +93,13 @@ So, we should now be ready to run the plotter:
     Plot written to plot.png
 
 A plot was generated. Open it in your favorite image viewer.
-On Ubuntu/LinuxMint you can try *Eye of Gnome*:
+On Ubuntu/LinuxMint you can try *Eye of Gnome*, on macOS just say ``open``:
 
 .. code-block:: bash
 
-    $ eog plot.png
+    $ eog plot.png  # on Ubuntu use Eye of Gnome
+    or
+    $ open plot.png # on macOS
 
 The image should look like the following:
 
