@@ -24,6 +24,8 @@ Why using WPS?
 
 * Access to external resources
 
+  * operations would be calculated on the server,
+    while the system resources could be exposed to clients.
   * large climate data stores
   * compute resources
   * complex software systems
