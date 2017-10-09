@@ -180,23 +180,6 @@ Notice that the output will be returned as reference, for example:
 Exercise 4
 ----------
 
-You can also return the output directly. For this modify the above request
-and add the ``RawDataOutput`` parameter:
-
-.. code-block:: bash
-
-  http://127.0.0.1:5000/wps?
-      Service=WPS&
-      Request=Execute&
-      Version=1.0.0&
-      Identifier=PLOT_IDENTIFIER&
-      DataInputs=variable=air;dataset=@xlink:href=NC_URL&
-      RawDataOutput=output
-
-
-Exercise 5
-----------
-
 You can also run the process in
 `asynchronous mode <http://pywps.readthedocs.io/en/latest/process.html#progress-and-status-report>`_
 by adding the parameters ``storeExecuteResponse=true`` and ``status=true``.
@@ -232,9 +215,27 @@ and you need to poll the status document given by the **statusLocation** URL:
     </wps:Status>
   </wps:ExecuteResponse>
 
+.. not working with pywps on python 3
+  Exercise 5
+  ----------
+
+  You can also return the output directly. For this modify the above request
+  and add the ``RawDataOutput`` parameter:
+
+  .. code-block:: bash
+
+    http://127.0.0.1:5000/wps?
+        Service=WPS&
+        Request=Execute&
+        Version=1.0.0&
+        Identifier=PLOT_IDENTIFIER&
+        DataInputs=variable=air;dataset=@xlink:href=NC_URL&
+        RawDataOutput=output
+
 Links
 -----
 
 * `PyWPS workshop <https://github.com/PyWPS/pywps-workshop/blob/master/02-Process.md>`_
 * `Geoprocessing Info <http://geoprocessing.info/wpsdoc/1x0ExecuteGET>`_
 * `NOAA Thredds Catalog <https://www.esrl.noaa.gov/psd/thredds/catalog.html>`_
+* `Notebook with WPS requests <https://github.com/bird-house/birdhouse-workshop/blob/master/tutorials/10_pywps_process/notebooks/wps-requests.ipynb>`_
