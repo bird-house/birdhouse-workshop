@@ -1,39 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!-- Execute operation request assuming use of default formats.-->
-<!-- Equivalent GET request (not fully URL-encoded) is 
-		http://foo.bar/foo?
-			Service=WPS&
-			Version=1.0.0&
-			Language=en-CA&
-			Request=Execute&
-			Identifier=Buffer&
-			DataInputs=InputPolygon=@xlink:href=http%3A%2F%2Ffoo.bar%2Fsome_WFS_request.xml;BufferDistance=400&
-			ResponseDocument=BufferedPolygon=@asReference=true&
+<!-- Equivalent GET request (not fully URL-encoded) is
+		http://localhost:5000/wps?
+			service=WPS&
+			request=Execute&
+			version=1.0.0&
+			identifier=simple_plot&
+			datainputs=dataset=@xlink:href=https://www.esrl.noaa.gov/psd/thredds/fileServer/Datasets/ncep.reanalysis.derived/surface/air.mon.ltm.nc;variable=air&
+			ResponseDocument=output=@asReference=true&
 			storeExecuteResponse=true
 -->
 <wps:Execute service="WPS" version="1.0.0" xmlns:wps="http://www.opengis.net/wps/1.0.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wps/1.0.0
 ../wpsExecute_request.xsd">
-	<ows:Identifier>Buffer</ows:Identifier>
+	<ows:Identifier>simple_plot</ows:Identifier>
 	<wps:DataInputs>
 		<wps:Input>
-			<ows:Identifier>InputPolygon</ows:Identifier>
-			<ows:Title>Playground area</ows:Title>
-			<wps:Reference xlink:href="http://foo.bar/some_WFS_request.xml"/>
+			<ows:Identifier>dataset</ows:Identifier>
+			<ows:Title>Dataset</ows:Title>
+			<wps:Reference xlink:href="https://www.esrl.noaa.gov/psd/thredds/fileServer/Datasets/ncep.reanalysis.derived/surface/air.mon.ltm.nc"/>
 		</wps:Input>
 		<wps:Input>
-			<ows:Identifier>BufferDistance</ows:Identifier>
-			<ows:Title>Distance which people will walk to get to a playground.</ows:Title>
+			<ows:Identifier>variable</ows:Identifier>
+			<ows:Title>Variable</ows:Title>
 			<wps:Data>
-				<wps:LiteralData>400</wps:LiteralData>
+				<wps:LiteralData>air</wps:LiteralData>
 			</wps:Data>
 		</wps:Input>
 	</wps:DataInputs>
 	<wps:ResponseForm>
 		<wps:ResponseDocument storeExecuteResponse="true">
 			<wps:Output asReference="true">
-				<ows:Identifier>BufferedPolygon</ows:Identifier>
-				<ows:Title>Area serviced by playground.</ows:Title>
-				<ows:Abstract>Area within which most users of this playground will live.</ows:Abstract>
+				<ows:Identifier>output</ows:Identifier>
+				<ows:Title>Plot Output</ows:Title>
 			</wps:Output>
 		</wps:ResponseDocument>
 	</wps:ResponseForm>
