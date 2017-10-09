@@ -153,7 +153,7 @@ Use the following request URL.
       Identifier=PLOT_IDENTIFIER&
       DataInputs=variable=air;dataset=@xlink:href=NC_URL
 
-Or in one line:
+Or as a one-liner:
 
 http://127.0.0.1:5000/wps?Service=WPS&Request=Execute&Version=1.0.0&Identifier=PLOT_IDENTIFIER&DataInputs=variable=air;dataset=@xlink:href=NC_URL
 
@@ -177,9 +177,60 @@ Notice that the output will be returned as reference, for example:
   </wps:ProcessOutputs>
 
 
-.. todo::
-  Execute Request with direct output.
+Exercise 4
+----------
 
+You can also return the output directly. For this modify the above request
+and add the ``RawDataOutput`` parameter:
+
+.. code-block:: bash
+
+  http://127.0.0.1:5000/wps?
+      Service=WPS&
+      Request=Execute&
+      Version=1.0.0&
+      Identifier=PLOT_IDENTIFIER&
+      DataInputs=variable=air;dataset=@xlink:href=NC_URL&
+      RawDataOutput=output
+
+
+Exercise 5
+----------
+
+You can also run the process in
+`asynchronous mode <http://pywps.readthedocs.io/en/latest/process.html#progress-and-status-report>`_
+by adding the parameters ``storeExecuteResponse=true`` and ``status=true``.
+
+.. code-block:: bash
+
+  http://127.0.0.1:5000/wps?
+      Service=WPS&
+      Request=Execute&
+      Version=1.0.0&
+      Identifier=PLOT_IDENTIFIER&
+      DataInputs=variable=air;dataset=@xlink:href=NC_URL&
+      storeExecuteResponse=true&
+      status=true
+
+In this case you will a response, which tells you that the process has been accepted,
+and you need to poll the status document given by the **statusLocation** URL:
+
+.. code-block:: xml
+  :emphasize-lines: 4,11
+
+  <wps:ExecuteResponse
+    service="WPS" version="1.0.0" xml:lang="en-US"
+    serviceInstance="http://localhost:5000/wps?service=WPS&amp;request=GetCapabilities"
+    statusLocation="http://localhost:5000/outputs/c894c1b4-acf7-11e7-b989-acde48001122.xml">
+    <wps:Process wps:processVersion="1.0">
+      <ows:Identifier>simple_plot</ows:Identifier>
+      <ows:Title>Simple Plot</ows:Title>
+      <ows:Abstract>Returns a nice and simple plot.</ows:Abstract>
+    </wps:Process>
+    <wps:Status creationTime="2017-10-09T15:43:10Z">
+      <wps:ProcessAccepted>PyWPS Process simple_plot accepted</wps:ProcessAccepted>
+    </wps:Status>
+  </wps:ExecuteResponse>
 
 Links
 -----
