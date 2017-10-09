@@ -53,6 +53,13 @@ NCI, Australia
 * NCI: http://nci.org.au/
 * `Talk about WPS for Pointclouds <http://pointclouds.nci.org.au/talks/f4g_pointwps_adamsteer.pdf>`_
 
+DKRZ, Germany
+#############
+
+* DKRZ: https://www.dkrz.de/dkrz-en
+* Birdhouse: http://bird-house.github.io/
+* Metadata Spotchecker etc: https://esgf.llnl.gov/media/2016-F2F/8-12-2016/F2F-2016-Birdhouse.pdf
+
 KIT, Germany
 ############
 
