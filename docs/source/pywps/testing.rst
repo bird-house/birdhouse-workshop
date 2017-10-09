@@ -62,30 +62,25 @@ Similar to *wget* you can also use *curl* to retrieve the *GetCapabilities* XML 
 RESTClient (Firefox only)
 -------------------------
 
-You can use the `RestClient`_ Firefox plugin run requests.
+You can use the `RestClient`_ Firefox plugin to run requests.
 
-Here is an example with a **GET** request:
+Here is an example with a **GetCapabilities** request using HTTP method **GET**:
 
 .. image:: ../_static/rest-client-get.png
 
-Post Request
-------------
+XML HTTP Post Request
+---------------------
 
 As requests and data become more structure and lengthy, concatenating all
 parameters into a URL for a GET type request becomes difficult or impossible.
 For this reason the WPS standard allows the definition of requests as XML documents
 sent to the server using the POST method of the HTTP protocol.
 
-It is also possible to use wget (or curl) for POST requests but then the
-command line becomes to extensive.
+Here is an example with an **Execute** request using HTTP method **POST**:
 
-.. todo::
+.. image:: ../_static/rest-client-post.png
 
-  Prepare GET and POST example.
-
-  http://geoprocessing.info/wpsdoc/1x0ExecutePOST
-
-  http://wiki.ieee-earth.org/Documents/GEOSS_Tutorials/GEOSS_Provider_Tutorials/Web_Processing_Service_Tutorial_for_GEOSS_Providers/Section_2%3a_Introduction_to_WPS
+It is also possible to use curl (or wget) for POST requests:
 
 
 
@@ -137,3 +132,5 @@ Links
 * `RestClient <http://restclient.net/>`_
 * `Poster on Chrome <https://chrome.google.com/webstore/detail/chrome-poster/cdjfedloinmbppobahmonnjigpmlajcd>`_
 * `PyWPS workshop <https://github.com/PyWPS/pywps-workshop/blob/master/03-Testing.md>`_
+* `Geoprocessing Info <http://geoprocessing.info/wpsdoc/1x0ExecutePOST>`_
+* `WPS Tutorial <http://wiki.ieee-earth.org/Documents/GEOSS_Tutorials/GEOSS_Provider_Tutorials/Web_Processing_Service_Tutorial_for_GEOSS_Providers/Section_2%3a_Introduction_to_WPS>`_
