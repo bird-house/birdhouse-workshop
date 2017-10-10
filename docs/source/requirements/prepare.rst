@@ -87,7 +87,7 @@ You can use your DKRZ account and log-in to `Mistral`_ to run this workshop:
 
 .. code-block:: bash
 
-  $ ssh -X myname@mistral.dkrz.de
+  $ ssh -Y myname@mistral.dkrz.de
   # unload conflicting modules
   $ module unload netcdf_c
   # load anaconda module
