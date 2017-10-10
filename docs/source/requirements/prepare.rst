@@ -31,12 +31,6 @@ Activate the conda *workshop* environment (Linux and macOS):
 
       $ activate workshop
 
-..
-
-  .. tip::
-    If you are a DKRZ user you can also log-in to the :ref:`DKRZ Compute Cluster <dkrz>`
-
-
 I don't have git ...
 --------------------
 
@@ -80,39 +74,4 @@ a conda ``environment.yml`` file in the top level folder:
 
    $ conda env create -f environment.yml
 
-
-..
-
-  .. _dkrz:
-
-  Using your DKRZ account (*DKRZ users only*)
-  ---------------------------------------------
-
-  You can use your DKRZ account and log-in to `Mistral`_ to run this workshop:
-
-  .. code-block:: bash
-
-    $ ssh -Y myname@mistral.dkrz.de
-    # unload conflicting modules
-    $ module unload netcdf_c
-    # load anaconda module
-    $ module load anaconda3
-
-  You may start a `Byobu`_ session to have multiple terminal windows:
-
-  .. code-block:: bash
-
-    $ byobu
-
-  .. tip::
-    There is a prepared **read-only** conda environment on mistral,
-    which you can activate with the following command::
-
-      $ source activate /mnt/lustre01/work/kd0956/sw/conda-envs/birdhouse-workshop
-
-    Only use it when your environment is broken or installation takes too long.
-
 .. _Byobu: http://byobu.co/
-
-..
-  .. _Mistral: https://www.dkrz.de/Nutzerportal/dokumentationen/de-mistral
