@@ -47,13 +47,13 @@ Plot our well-know image:
     $ python plotter.py --variable air ../../data/air.mon.ltm.nc
 
 Exercise 1
------------
+----------
 
 Play a little bit with the command-line options. Try some other options (``-V``),
 use invalid input (water) and skip some arguments.
 
-Excercise 2
------------
+Exercise 2
+----------
 
 Use external data from a Thredds service, like NOAA:
 
