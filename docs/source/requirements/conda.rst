@@ -82,6 +82,7 @@ Links
 * https://docs.anaconda.com/docs_oss/conda/install/quick
 * https://docs.anaconda.com/docs_oss/conda/test-drive
 * https://conda.io/docs/user-guide/cheatsheet.html
+* https://www.anaconda.com/blog/developer-blog/what-to-do-when-things-go-wrong-in-anaconda/
 
 
 .. _Conda: http://conda.io/
