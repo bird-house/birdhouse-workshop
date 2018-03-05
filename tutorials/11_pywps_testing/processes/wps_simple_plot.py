@@ -16,12 +16,15 @@ class SimplePlot(Process):
             ComplexInput('dataset', 'Dataset', supported_formats=[Format('application/x-netcdf')],
                          default=AIR_DS,
                          abstract='Example: {0}'.format(AIR_DS)),
+            ComplexInput('text', 'Text', supported_formats=[Format('text/plain')]),
             LiteralInput('variable', 'Variable', data_type='string',
                          default='air',
                          abstract='Enter the variable name.'),
         ]
         outputs = [
             ComplexOutput('output', 'Simple Plot', supported_formats=[Format('image/png')],
+                          as_reference=True),
+            ComplexOutput('text', 'Text', supported_formats=[Format('text/plain')],
                           as_reference=True),
         ]
 
@@ -45,5 +48,6 @@ class SimplePlot(Process):
             variable=variable)
         LOGGER.info("produced output: %s", output)
         response.outputs['output'].file = output
+        response.outputs['text'].file = request.inputs['text'][0].file
         response.update_status("simple_plot done", 100)
         return response
